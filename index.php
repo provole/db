@@ -9,55 +9,34 @@ mysql_select_db("freeze",$query);
 <head profile="http://gmpg.org/xfn/11">
 <title>Smart Home</title>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 <script type="text/javascript"src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
 
 </script>
 	<script src="jquery/jquery-2.2.0.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-$('#myonoffswitch').click(function(){
-var myonoffswitch=$('#myonoffswitch').val();
-if ($("#myonoffswitch:checked").length == 0)
-{
-var a=myonoffswitch;
-}
-else
-{
-var a="off";
-}
+<script type="text/javascript" src="jquery/script.js">
 
-$.ajax({
-type: "POST",
-url: "ajax.php",
-data: "value="+a ,
-success: function(html){
-$("#display").html(html).show();
-}
-});
-
-});
-});
 </script>
 
-<script type="text/javascript">
-$(document).ready( function(){
-$(".cb-enable").click(function(){
-var parent = $(this).parents('.switch');
-$('.cb-disable',parent).removeClass('selected');
-$(this).addClass('selected');
-$('.checkbox',parent).attr('checked', true);
-});
-$(".cb-disable").click(function(){
-var parent = $(this).parents('.switch');
-$('.cb-enable',parent).removeClass('selected');
-$(this).addClass('selected');
-$('.checkbox',parent).attr('checked', false);
-});
-});
-</script>
+
 
 </head>
 <body>
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+  
+
 <div class="onoffswitch">
 <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch"
 <?php  
@@ -79,8 +58,7 @@ echo "checked";
 </label>
 </div>
 
-<div id="display"><img src="picOff.jpg" border="0">
-</div>
+
 	
 	
 	
