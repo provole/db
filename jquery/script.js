@@ -1,25 +1,27 @@
-$(document).ready(function(){
-$('#myonoffswitch').click(function(){
-var myonoffswitch=$('#myonoffswitch').val();
-if ($("#myonoffswitch:checked").length == 0)
-{
-var a=myonoffswitch;
-}
-else
-{
-var a="off";
-}
+function checkLights(object) {
+
+var a = {
+	name: object.attr('name'),
+	value: (object.attr("checked"))? "on": "off"
+} 
 
 $.ajax({
 type: "POST",
 url: "ajax.php",
-data: "value="+a ,
+data: "value="+a.value+"&name="+a.name,
 success: function(html){
 $("#display").html(html).show();
 }
 });
 
-});
+}
+$(document).ready(function(){
+	$('#myonoffswitch').click(function(){
+		checkLights($('#myonoffswitch'));
+	});
+	$("#mykopche").click(function() {
+		checkLights($('#mykopche'));
+	});
 });
 
 $(document).ready( function(){

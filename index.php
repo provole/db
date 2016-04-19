@@ -134,7 +134,26 @@ echo "checked";
 </label>
 </div>
 	
+<div class="kopche">
+<input type="checkbox" name="kopche" class="mykopche-checkbox" id="mykopche"
+<?php  
+$query3=mysql_query("select * from choice where id=2");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "checked";
+}
+?> />
+
+
+
 	
+	
+<label class="kopche-label" for="mykopche">
+<div class="kopche-inner"></div>
+<div class="kopche-switch"></div>
+</label>
+</div>
 	
 	
 
