@@ -26,10 +26,10 @@ mysql_select_db("freeze",$query);
 </head>
 <body>
 	<!-- Static navbar -->
- 
+ <div class="bgColor">
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="slide-nav">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="slide-nav">
   <div class="container">
    <div class="navbar-header">
     <a class="navbar-toggle"> 
@@ -147,6 +147,7 @@ echo "checked";
 	$link_address = 'house.php';
 echo "<a href='$link_address'>View House</a>";
 ?>
-
+	 <div class="footer"><p>kappa</p></div>
+</div>
 </body>
 </html>

@@ -2,6 +2,20 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: "Times New Roman", Georgia, Serif;
+	background-color: aqua;
+}
+.bgColor{/*
+background: -moz-linear-gradient(220deg, rgba(142,184,247,1) 24%, rgba(30,57,115,1) 100%); 
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(30,57,115,1)), color-stop(76%, rgba(142,184,247,1)));  safari4+,chrome 
+background: -webkit-linear-gradient(220deg, rgba(142,184,247,1) 24%, rgba(30,57,115,1) 100%); 
+background: -o-linear-gradient(220deg, rgba(142,184,247,1) 24%, rgba(30,57,115,1) 100%); 
+background: linear-gradient(230deg, rgba(142,184,247,1) 24%, rgba(30,57,115,1) 100%); /* w3c 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', endColorstr='#8eb8f7',GradientType=1 );  */
+}
+
+
+.footer{
+	margin-top: 300px;
 }
 .onoffswitch {
 position: relative; width: 90px;
@@ -65,7 +79,14 @@ body.slide-active {
     margin-top: 0px!important
 }
 /*wrap the entire page content but not nav inside this div if not a fixed top, don't add any top padding */
-
+#slide-nav{
+	background: transparent;
+	
+	border-color: transparent;
+}
+.navbar-default{
+	border-color: transparent;
+}
 /* put toggle bars on the left :: not using button */
 #slide-nav .navbar-toggle {
     cursor: pointer;
@@ -108,14 +129,12 @@ body.slide-active {
 	    padding: 0 15px;
 	}
 	#slide-nav .navbar.slide-active {
-		margin-top: 20px;
 	    position: absolute;
 	    width: 80%;
 	    top: -1px;
 	    z-index: 1000;
 	}
 	#slide-nav #slidemenu {
-		
 	    background: #f7f7f7;
 	    left: -100%;
 	    width: 80%;
@@ -127,19 +146,16 @@ body.slide-active {
 	    margin: 0;
 	}
 	#slide-nav #slidemenu .navbar-nav {
-		
 	    min-width: 0;
 	    width: 100%;
 	    margin: 0;
 	}
 	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
-		
 	    min-width: 0;
 	    width: 80%;
 	    white-space: normal;
 	}
 	#slide-nav {
-		
 	    border-top: 0
 	}
 	#slide-nav.navbar-inverse #slidemenu {
@@ -191,7 +207,7 @@ body.slide-active {
 	padding: 30px;
         font-size: 26px;
         text-align: center;
-        background: #777;
+        background: #555;
 	text-decoration: none;
 }
 
