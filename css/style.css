@@ -45,3 +45,17 @@ margin-left: 0;
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
 right: 0px;
 }
+
+
+
+
+/*MAIN PAGE */
+
+#thumbnail{
+	background: #777;
+}
+#caption{
+	color: #fff;
+}
+
+/*END OF MAIN PAGE */

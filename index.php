@@ -58,7 +58,63 @@ echo "checked";
 </label>
 </div>
 
+  <section id="indexPage" class="indexPage">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 text-center">
 
+         
+          <hr class="small">
+          <div class="row">
+            <div class="col-md-6">            
+              <div class="thumbnail" id="thumbnail">
+                <div class="caption" id="caption">
+                  
+                  <p>Controls.</p>
+                  </div>
+             
+                </div>
+              </div>
+
+              <div class="col-md-6">            
+                <div class="thumbnail" id="thumbnail">
+                  <div class="caption"  id="caption">
+                  
+                    <p>View</p>
+                  
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6">            
+                  <div class="thumbnail"  id="thumbnail">
+                    <div class="caption"  id="caption">
+                      
+                      <p>Warnings.</p>
+                  
+                      </div>
+                 
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-6">            
+                    <div class="thumbnail"  id="thumbnail">
+                      <div class="caption" id="caption">
+             
+                        <p>Settings</p>
+                        
+                        </div>
+        
+                      </div>
+                    </div>        
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.container -->
+                </section>
 	
 	
 	
