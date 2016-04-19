@@ -1,11 +1,11 @@
 <?php
 $query=mysql_connect("localhost","root","");
 mysql_select_db("freeze",$query);
-if(isset($_POST['value']))
+if(isset($_POST['value']) && isset($_POST['name']))
 {
 $value=$_POST['value'];
-mysql_query("update choice set choice='$value' where id='1'");
-
+$name=$_POST['name'];
+mysql_query("update choice set choice='$value' where name='$name'");
 }
 
 
