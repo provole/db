@@ -42,42 +42,13 @@ mysql_select_db("freeze",$query);
    </div>
    <div id="slidemenu">
      
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="search" placeholder="search" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-primary">Search</button>
-          </form>
-     
+    
     <ul class="nav navbar-nav">
      <li class="active"><a href="#">Home</a></li>
      <li><a href="#about">About</a></li>
      <li><a href="#contact">Contact</a></li>
-     <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-      <ul class="dropdown-menu">
-       <li><a href="#">Action</a></li>
-       <li><a href="#">Another action</a></li>
-       <li><a href="#">Something else here</a></li>
-       <li class="divider"></li>
-       <li class="dropdown-header">Nav header</li>
-       <li><a href="#">Separated link</a></li>
-       <li><a href="#">One more separated link</a></li>
-       <li><a href="#">Action</a></li>
-       <li><a href="#">Another action</a></li>
-       <li><a href="#">Something else here</a></li>
-       <li class="divider"></li>
-       <li class="dropdown-header">Nav header</li>
-       <li><a href="#">Separated link</a></li>
-       <li><a href="#">One more separated link</a></li>
-       <li><a href="#">Action</a></li>
-       <li><a href="#">Another action</a></li>
-       <li><a href="#">Something else here</a></li>
-       <li class="divider"></li>
-       <li class="dropdown-header">Nav header</li>
-       <li><a href="#">Separated link test long title goes here</a></li>
-       <li><a href="#">One more separated link</a></li>
-      </ul>
-     </li>
+    
+    
     </ul>
           
    </div>
@@ -100,15 +71,26 @@ mysql_select_db("freeze",$query);
 
         <!-- Projects Row -->
 
+	
+<div class="container">
+    <div class="row">
+      <div class="span4"></div>
+        <div class="span4" ><img class="img-responsive center-block img-circle" src="http://placehold.it/350x150"/></div>
+      <div class="span4"></div>
+    </div>
+</div>
+	
+<hr />	
 <div class="controls">
 <div class="container">
         <div class="row">
-            <div class="col-md-6"><p><a href="#">Controls</a></p></div>
-            <div class="col-md-6"><p><a href="house.php">View</a></p></div>
-            <div class="col-md-6"><p><a href="#">Warnings</a></p></div>
-            <div class="col-md-6"><p><a href="#">Visitors</a></p></div>
-            <div class="col-md-6"><p><a href="#">Security</a></p></div>
-            <div class="col-md-6"><p><a href="#">Settings</a></p></div>
+            <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="#">Controls</a></p></div>
+             <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="#">View</a></p></div>
+			 <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="#">Warnings</a></p></div>
+			 <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="#">Visitors</a></p></div>
+			 <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="#">Security</a></p></div>
+			 <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="#">Settings</a></p></div>
+			
          
         </div>
     </div>
