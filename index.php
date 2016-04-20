@@ -45,7 +45,7 @@ mysql_select_db("freeze",$query);
     
     <ul class="nav navbar-nav">
      <li class="active"><a href="#">Home</a></li>
-     <li><a href="#about">About</a></li>
+     <li><a href="pages/controls.php">Controls</a></li>
      <li><a href="#contact">Contact</a></li>
     
     
@@ -84,7 +84,7 @@ mysql_select_db("freeze",$query);
 <div class="controls">
 <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="#">Controls</a></p></div>
+            <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="pages/controls.php">Controls</a></p></div>
              <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="#">View</a></p></div>
 			 <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="#">Warnings</a></p></div>
 			 <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="#">Visitors</a></p></div>

@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	font-family: "Times New Roman", Georgia, Serif;
+
 	background-color: aqua;
 }
 .bgColor{/*
@@ -214,7 +214,9 @@ body.slide-active {
 .controls a{
 	color: #fff;
 }
-
+.controls p{
+	color: #Fff;
+}
 .controls a:hover{
 	text-decoration: none;
 	color: aqua;
@@ -222,4 +224,58 @@ body.slide-active {
 
 #circle{
 	border-radius: 350%;
+}
+#portfolio {
+
+	background: url(../navBar/mac.jpg)no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*
+  
+
+
+  padding:50px 0px 70px 0px;
+
+
+}
+
+
+
+
+
+
+
+.portheader {
+  text-align: center;
+  margin-bottom:50px;
+}
+
+#portfolio h1 {
+  position: relative;
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 300;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 3px;
+  display: inline-block;
+  z-index: 1;
+}
+
+#portfolio h2{
+  color:#fff;
+}
+
+.project h4 {
+  color:#fff;
+  text-align: center;
+}
+
+.left{
+	text-align: left;
+}
+
+.small{
+	width: 25px;
+	color: #000;
 }
