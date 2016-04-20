@@ -250,7 +250,11 @@ body.slide-active {
   text-align: center;
   margin-bottom:50px;
 }
-
+#portfolio .thumbnail{
+-webkit-box-shadow: 7px 6px 14px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 6px 14px -8px rgba(0,0,0,0.75);
+box-shadow: 7px 6px 14px -8px rgba(0,0,0,0.75);
+}
 #portfolio h1 {
   position: relative;
   font-size: 48px;
@@ -262,10 +266,10 @@ body.slide-active {
   z-index: 1;
 }
 
-#portfolio h2{
-  color:#fff;
-}
 
+#portfolio{
+	margin-top: 50px;
+}
 .project h4 {
   color:#fff;
   text-align: center;
@@ -279,3 +283,12 @@ body.slide-active {
 	width: 25px;
 	color: #000;
 }
+
+.security{
+	float: left;
+	margin-top: -10px;
+}
+
+
+
+  

@@ -44,8 +44,8 @@ mysql_select_db("freeze",$query);
      
     
     <ul class="nav navbar-nav">
-     <li class="active"><a href="#">Home</a></li>
-     <li><a href="#about">About</a></li>
+     <li><a href="#">Home</a></li>
+     <li class="active"><a href="#about">Controls</a></li>
      <li><a href="#contact">Contact</a></li>
     
     
@@ -72,15 +72,8 @@ mysql_select_db("freeze",$query);
         <!-- Projects Row -->
 
 	
-<div class="container">
-    <div class="row">
-      <div class="span4"></div>
-        <div class="span4" ><img class="img-responsive center-block img-circle" src="http://placehold.it/350x150"/></div>
-      <div class="span4"></div>
-    </div>
-</div>
-	
-<hr />	
+
+
 
 	
 
@@ -89,29 +82,57 @@ mysql_select_db("freeze",$query);
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 text-center">
 
-          <h2>Work</h2>
-          <hr class="small">
           <div class="row">
             <div class="col-md-4">            
               <div class="thumbnail">
                 <div class="caption">
                   
              		<h3 class="left">Status</h3>
-					<hr class="small"/>
-
-                  </div>
-                  <img src="portfolio_pics/forecaster.png" alt="...">
+					<hr align="left" width="80%"/>
+					<img src="../source_files/security.png" class="security" width="70" height="70">
+					<p align="center">Security is ON</p>
+					<br><hr align="left" width="80%"/>
+					
+					<p align="left">There are 2 doors unlocked</p>
+				  </div>
+                  
                 </div>
               </div>
 
               <div class="col-md-4">            
                 <div class="thumbnail">
                   <div class="caption">
-                    <h4>PHP</h4>
-                    <p>This is a PHP web application that allows the user to search movies from the database.</p>
-                    <p><a href="https://selene.hud.ac.uk/u1350847/ASSIGN1/index.php" class="label label-danger" rel="tooltip" title="Open">Open</a>
+             
+                   <h3 class="left">Locks</h3>
+                   <hr align="left" width="80%"/>
+					<img class="security" src="../source_files/Graphicloads-Colorful-Long-Shadow-Lock%20(1).ico" width="40" height="40" align="left"> <p>Front door is locked</p>
+					  <hr align="left" width="80%"/>
+					  <img class="security" src="../source_files/Graphicloads-100-Flat-Unlock.ico" width="40" height="40" align="left">
+						   <p>Back door is unlocked</p>
+						   
                     </div>
-                    <img src="portfolio_pics/cinema.jpg" alt="...">
+                   
+                  </div>
+                </div>
+			    <div class="col-md-4">            
+                <div class="thumbnail">
+                  <div class="caption">
+             
+                   <h3 class="left">Lighting</h3>
+					  <P align="left">Master Switch</P>
+                   <hr align="left" width="80%"/>
+					<img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Kitchen light is OFF</p>
+					  <hr align="left" width="80%"/>
+					  <img class="security" src="../source_files/lighton.png" width="40" height="40" align="left">
+						   <p>Living room light is ON</p>
+					  <hr align="left" width="80%"/>
+					  <img class="security" src="../source_files/lighton.png" width="40" height="40" align="left">
+						   <p>Bedroom light is ON</p>
+					  <hr align="left" width="80%"/>
+					<img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Outdoor light is OFF</p>
+						   
+                    </div>
+                   
                   </div>
                 </div>
               </div>
@@ -120,9 +141,9 @@ mysql_select_db("freeze",$query);
                 <div class="col-md-6">            
                   <div class="thumbnail">
                     <div class="caption">
-                      
-                      <p>A responsive website that allows Kirklees residents to vote for or against, and share opinions on local political and social issues. The website features a central place for users to discuss, read local media coverage and view the most popular social media comments about an issue.</p>
-                      <p><a href="http://standpoint-fruttauro.rhcloud.com" class="label label-danger" rel="tooltip" title="Open">Open</a>
+                     <h3 class="left">Heating</h3>
+                      	 <hr align="left" width="80%"/>
+							<h1>21°</h1>
                       </div>
                       <img src="aboutMePic/datacopy.png" alt="...">
                     </div>
