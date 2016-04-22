@@ -157,7 +157,27 @@ echo "checked";
 </label>
 </div></P>
                    <hr align="left" width="80%"/>
-					<img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Kitchen light is OFF</p>
+					<img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Kitchen light is OFF</p><div class="kopche">
+<input type="checkbox" name="kopche" class="kopche-checkbox" id="mykopche"
+<?php  
+$query3=mysql_query("select * from choice where id=2");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "checked";
+}
+?> />
+
+
+
+	
+	
+<label class="kopche-label" for="mykopche">
+<div class="kopche-inner"></div>
+<div class="kopche-switch"></div>
+</label>
+</div>
+	
 					  <hr align="left" width="80%"/>
 					  <img class="security" src="../source_files/lighton.png" width="40" height="40" align="left">
 						   <p>Living room light is ON</p>

@@ -112,7 +112,7 @@ mysql_select_db("freeze",$query);
 	
 	
 	
-	
+
 	<div class="onoffswitch">
 <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch"
 <?php  
@@ -125,9 +125,6 @@ echo "checked";
 ?> />
 
 
-
-	
-	
 <label class="onoffswitch-label" for="myonoffswitch">
 <div class="onoffswitch-inner"></div>
 <div class="onoffswitch-switch"></div>
@@ -135,7 +132,7 @@ echo "checked";
 </div>
 	
 <div class="kopche">
-<input type="checkbox" name="kopche" class="mykopche-checkbox" id="mykopche"
+<input type="checkbox" name="kopche" class="kopche-checkbox" id="mykopche"
 <?php  
 $query3=mysql_query("select * from choice where id=2");
 $query4=mysql_fetch_array($query3);
@@ -145,10 +142,6 @@ echo "checked";
 }
 ?> />
 
-
-
-	
-	
 <label class="kopche-label" for="mykopche">
 <div class="kopche-inner"></div>
 <div class="kopche-switch"></div>
