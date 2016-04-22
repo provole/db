@@ -44,8 +44,8 @@ mysql_select_db("freeze",$query);
      
     
     <ul class="nav navbar-nav">
-     <li><a href="../index.php">Home</a></li>
-     <li class="active"><a href="#about">Controls</a></li>
+      <a href="../index.php"><li class="active"><img src="../source_files/homeicon.png" height="30"/></li></a> 
+     <a href="#/controls.php"><li class="active"><img src="../source_files/offbtnn.png" height="30"/></li></a> 
      <li><a href="#contact">Contact</a></li>
     
     
@@ -90,7 +90,19 @@ mysql_select_db("freeze",$query);
              		<h3 class="left">Status</h3>
 					<hr align="left" width="80%"/>
 					<img src="../source_files/security.png" class="security" width="70" height="70">
-					<p align="center">Security is ON</p>
+					<p align="center">Security is 
+					<?php  
+$query3=mysql_query("select * from choice where id=4");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "OFF";
+}
+						else{
+							echo "ON";
+						}
+?>
+					</p>
 					<div class="security">
 <input type="checkbox" name="security" class="security-checkbox" id="mysecurity"
 <?php  
@@ -115,7 +127,10 @@ echo "checked";
 					
 					<br><hr align="left" width="80%"/>
 					
-					<p align="left">There are 2 doors unlocked</p>
+					<!-- <p align="left">There are 2 doors unlocked</p> -->
+					
+
+
 				  </div>
                   
                 </div>
