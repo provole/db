@@ -46,7 +46,7 @@ mysql_select_db("freeze",$query);
     <ul class="nav navbar-nav">
       <a href="../index.php"><li class="active"><img src="../source_files/homeicon.png" height="30"/></li></a> 
      <a href="#/controls.php"><li class="active"><img src="../source_files/offbtnn.png" height="30"/></li></a> 
-     <li><a href="#contact">Contact</a></li>
+     <li><a href="overview.php">Overview</a></li>
     
     
     </ul>
@@ -86,7 +86,7 @@ mysql_select_db("freeze",$query);
             <div class="col-md-4">            
               <div class="thumbnail">
                 <div class="caption">
-                  
+                  <!-- DISPLAYS STATUS IF ANYTHING IS UNLOCKED-->
              		<h3 class="left">Status</h3>
 					<hr align="left" width="80%"/>
 					<img src="../source_files/security.png" class="security" width="70" height="70">
@@ -101,6 +101,23 @@ echo "OFF";
 						else{
 							echo "ON";
 						}
+						
+	$query3=mysql_query("select * from choice where id=7");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "\n<br/> Front door is unlocked";
+}
+				
+				
+						
+			$query3=mysql_query("select * from choice where id=8");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "\n<br/> Back door is unlocked";
+}
+			
 ?>
 					</p>
 					<div class="security">
@@ -241,7 +258,25 @@ echo "checked";
 </label>
 </div></P>
                    <hr align="left" width="80%"/>
-					<img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Kitchen light is OFF</p><div class="kopche">
+					<img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Kitchen light is
+					  
+					  <?php  
+$query3=mysql_query("select * from choice where id=2");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "OFF";
+}
+						else{
+							echo "ON";
+						}
+?>
+					  
+					  
+					  
+					  
+					  
+					  </p><div class="kopche">
 <input type="checkbox" name="kopche" class="kopche-checkbox" id="mykopche"
 <?php  
 $query3=mysql_query("select * from choice where id=2");

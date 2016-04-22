@@ -46,7 +46,7 @@ mysql_select_db("freeze",$query);
     <ul class="nav navbar-nav">
     <a href="#"><li class="active"><img src="source_files/homeicon.png" height="30" alt="home"/></li></a> 
      <a href="pages/controls.php"><li class="active"><img src="source_files/offbtnn.png" height="30" alt="controls"/></li></a> 
-     <li><a href="#contact">Contact</a></li>
+     <li><a href="pages/overview.php">Overview</a></li>
     
     
     </ul>
