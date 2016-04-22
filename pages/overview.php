@@ -8,6 +8,7 @@ mysql_select_db("freeze",$query);
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
 			<meta name="generator" content="Bootply" />
+
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Smart Home</title>
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -81,15 +82,60 @@ mysql_select_db("freeze",$query);
             </ul>
           
         </div><!--/span--> 
+	 </div>
+	 </div>
+	 
+ <div class="col-sm-9 col-md-10 main">
+          
+          <!--toggle sidebar button-->
+          <p class="visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+          </p>
+          
+		  <h1 class="page-header">
+            Dashboard
+            <p class="lead">(<a href="http://www.bootply.com/128936">with off-canvas sidebar</a>)</p>
+          </h1>
 
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder text-center">
+              <img src="//placehold.it/200/6666ff/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder text-center">
+              <img src="//placehold.it/200/66ff66/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder text-center">
+              <img src="//placehold.it/200/6666ff/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder text-center">
+              <img src="//placehold.it/200/66ff66/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+          </div>
+          
+          <hr>
+
+        
+
+          <a href="http://www.bootply.com/gkTHCwjLO9">Get the Source Code</a> | <a href="http://bootstrap.theme.cards">More free Bootstrap themes</a>
+          
+      </div><!--/row-->
+	</div>
+</div><!--/.container-->
     <!-- Page Content -->
     <div class="container">
 
         <!-- Page Header -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">
-                </h1>
+
             </div>
         </div>
 	</div>
@@ -112,6 +158,6 @@ mysql_select_db("freeze",$query);
 	
 
 	 <div class="footer"><p>kappa</p></div>
-</div>
+
 </body>
 </html>

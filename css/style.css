@@ -4,7 +4,9 @@ body{
 
 	background-color: aqua;
 }
-
+.indicator{
+	font-size: 25px;
+}
 
 .bgColor{
 background: -moz-linear-gradient(220deg, rgba(142,184,247,1) 24%, rgba(30,57,115,1) 100%); 
@@ -465,5 +467,41 @@ box-shadow: 7px 6px 14px -8px rgba(0,0,0,0.75);
   margin-top: 0;
 }
 
+
+
+
+.nav-sidebarTwo {
+  background-color: #f5f5f5;
+  margin-right: -15px;
+  margin-bottom: 20px;
+  margin-left: -15px;
+
+}
+.nav-sidebarTwo > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebarTwo > .active > a {
+  color: #fff;
+  background-color: #428bca;
+}
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
 
 /* END OF NAV SIDER IN OVERVIEW PAGE */
