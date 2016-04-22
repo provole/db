@@ -91,6 +91,28 @@ mysql_select_db("freeze",$query);
 					<hr align="left" width="80%"/>
 					<img src="../source_files/security.png" class="security" width="70" height="70">
 					<p align="center">Security is ON</p>
+					<div class="security">
+<input type="checkbox" name="security" class="security-checkbox" id="mysecurity"
+<?php  
+$query3=mysql_query("select * from choice where id=4");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "checked";
+}
+?> />
+
+
+
+	
+	
+<label class="security-label" for="mysecurity">
+<div class="security-inner"></div>
+<div class="security-switch"></div>
+</label>
+</div>
+					
+					
 					<br><hr align="left" width="80%"/>
 					
 					<p align="left">There are 2 doors unlocked</p>
@@ -106,10 +128,57 @@ mysql_select_db("freeze",$query);
                    <h3 class="left">Locks</h3>
                    <hr align="left" width="80%"/>
 					<img class="security" src="../source_files/Graphicloads-Colorful-Long-Shadow-Lock%20(1).ico" width="40" height="40" align="left"> <p>Front door is locked</p>
+
+<div class="frontdoor">
+<input type="checkbox" name="frontdoor" class="frontdoor-checkbox" id="myfrontdoor"
+<?php  
+$query3=mysql_query("select * from choice where id=7");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "checked";
+}
+?> />
+
+
+
+	
+	
+<label class="frontdoor-label" for="myfrontdoor">
+<div class="frontdoor-inner"></div>
+<div class="frontdoor-switch"></div>
+</label>
+</div>
+
+					  
 					  <hr align="left" width="80%"/>
 					  <img class="security" src="../source_files/Graphicloads-100-Flat-Unlock.ico" width="40" height="40" align="left">
 						   <p>Back door is unlocked</p>
 						   
+					  <div class="backdoor">
+<input type="checkbox" name="backdoor" class="backdoor-checkbox" id="mybackdoor"
+<?php  
+$query3=mysql_query("select * from choice where id=8");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "checked";
+}
+?> />
+
+
+
+	
+	
+<label class="backdoor-label" for="mybackdoor">
+<div class="backdoor-inner"></div>
+<div class="backdoor-switch"></div>
+</label>
+</div>
+					  
+					  
+					  
+					  
                     </div>
                    
                   </div>
@@ -180,13 +249,75 @@ echo "checked";
 	
 					  <hr align="left" width="80%"/>
 					  <img class="security" src="../source_files/lighton.png" width="40" height="40" align="left">
-						   <p>Living room light is ON</p>
+						   <p>Living room light is ON</p><div class="livingroom">
+<input type="checkbox" name="livingroom" class="livingroom-checkbox" id="mylivingroom"
+<?php  
+$query3=mysql_query("select * from choice where id=3");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "checked";
+}
+?> />
+
+
+
+	
+	
+<label class="livingroom-label" for="mylivingroom">
+<div class="livingroom-inner"></div>
+<div class="livingroom-switch"></div>
+</label>
+</div>
 					  <hr align="left" width="80%"/>
 					  <img class="security" src="../source_files/lighton.png" width="40" height="40" align="left">
 						   <p>Bedroom light is ON</p>
+					  						   					<div class="bedroom">
+<input type="checkbox" name="bedroom" class="bedroom-checkbox" id="mybedroom"
+<?php  
+$query3=mysql_query("select * from choice where id=5");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "checked";
+}
+?> />
+
+
+
+	
+	
+<label class="bedroom-label" for="mybedroom">
+<div class="bedroom-inner"></div>
+<div class="bedroom-switch"></div>
+</label>
+</div>
+
+					  
+					  
+					  
 					  <hr align="left" width="80%"/>
 					<img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Outdoor light is OFF</p>
-						   
+						   					<div class="outdoor">
+<input type="checkbox" name="outdoor" class="outdoor-checkbox" id="myoutdoor"
+<?php  
+$query3=mysql_query("select * from choice where id=6");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "checked";
+}
+?> />
+
+
+
+	
+	
+<label class="outdoor-label" for="myoutdoor">
+<div class="outdoor-inner"></div>
+<div class="outdoor-switch"></div>
+</label>
+</div>
                     </div>
                    
                   </div>

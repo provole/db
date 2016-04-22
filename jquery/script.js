@@ -22,6 +22,24 @@ $(document).ready(function(){
 	$("#mykopche").click(function() {
 		checkLights($('#mykopche'));
 	});
+	$("#mylivingroom").click(function() {
+		checkLights($('#mylivingroom'));
+	});
+	$("#mysecurity").click(function() {
+		checkLights($('#mysecurity'));
+	});
+	$("#mybedroom").click(function() {
+		checkLights($('#mybedroom'));
+	});
+	$("#myoutdoor").click(function() {
+		checkLights($('#myoutdoor'));
+	});
+	$("#myfrontdoor").click(function() {
+		checkLights($('#myfrontdoor'));
+	});
+	$("#mybackdoor").click(function() {
+		checkLights($('#mybackdoor'));
+	});
 });
 
 $(document).ready( function(){
