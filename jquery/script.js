@@ -7,7 +7,7 @@ var a = {
 
 $.ajax({
 type: "POST",
-url: "ajax.php",
+url: "../ajax.php",
 data: "value="+a.value+"&name="+a.name,
 success: function(html){
 $("#display").html(html).show();

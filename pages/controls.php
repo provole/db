@@ -44,7 +44,7 @@ mysql_select_db("freeze",$query);
      
     
     <ul class="nav navbar-nav">
-     <li><a href="#">Home</a></li>
+     <li><a href="../index.php">Home</a></li>
      <li class="active"><a href="#about">Controls</a></li>
      <li><a href="#contact">Contact</a></li>
     
@@ -136,7 +136,26 @@ mysql_select_db("freeze",$query);
                   <div class="caption">
              
                    <h3 class="left">Lighting</h3>
-					  <P align="left">Master Switch</P>
+					  <P align="left">Master Switch	<div class="onoffswitch">
+<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch"
+<?php  
+$query3=mysql_query("select * from choice where id=1");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "checked";
+}
+?> />
+
+
+
+	
+	
+<label class="onoffswitch-label" for="myonoffswitch">
+<div class="onoffswitch-inner"></div>
+<div class="onoffswitch-switch"></div>
+</label>
+</div></P>
                    <hr align="left" width="80%"/>
 					<img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Kitchen light is OFF</p>
 					  <hr align="left" width="80%"/>
