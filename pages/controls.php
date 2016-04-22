@@ -114,7 +114,24 @@ mysql_select_db("freeze",$query);
                    
                   </div>
                 </div>
-			    <div class="col-md-4">            
+		<div class="col-md-4">            
+                  <div class="thumbnail">
+                    <div class="caption">
+                     <h3 class="left">Heating</h3>
+                      	 <hr align="left" width="80%"/>
+							<h1>21°</h1>
+							
+						
+                      </div>
+                   
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+
+                
+
+				  		    <div class="col-md-4">            
                 <div class="thumbnail">
                   <div class="caption">
              
@@ -135,25 +152,11 @@ mysql_select_db("freeze",$query);
                    
                   </div>
                 </div>
-              </div>
-              <div class="row">
-
-                <div class="col-md-6">            
-                  <div class="thumbnail">
-                    <div class="caption">
-                     <h3 class="left">Heating</h3>
-                      	 <hr align="left" width="80%"/>
-							<h1>21°</h1>
-                      </div>
-                      <img src="aboutMePic/datacopy.png" alt="...">
-                    </div>
-                  </div>
-
-
                   <div class="col-md-6">            
                     <div class="thumbnail">
                       <div class="caption">
-                        <h4>HTML CSS Javascript</h4>
+                        <h3 class="left">Energy History</h3>
+						  <hr align="left" width="80%"/>
                         <p>For my Web Programming Assignment 2 I had to build a film recommendation engine on the web. The user can enter preferences such as genre, year of release etc. and then provide suggestions.</p>
                         <p><a href="https://selene.hud.ac.uk/u1350847/assign2/index.html" class="label label-danger" rel="tooltip" title="Open">Open</a>
                         </div>

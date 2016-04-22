@@ -251,19 +251,23 @@ body.slide-active {
   margin-bottom:50px;
 }
 #portfolio .thumbnail{
--webkit-box-shadow: 7px 6px 14px -8px rgba(0,0,0,0.75);
+-webkit-box-shadow: 7px 6px 14px -8px rgbta(0,0,0,0.75);
 -moz-box-shadow: 7px 6px 14px -8px rgba(0,0,0,0.75);
 box-shadow: 7px 6px 14px -8px rgba(0,0,0,0.75);
 }
-#portfolio h1 {
+#portfolio h1{
   position: relative;
-  font-size: 48px;
-  line-height: 64px;
-  font-weight: 300;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 3px;
+  font-size: 38px;
+
+  
   display: inline-block;
-  z-index: 1;
+
+  background-color: orangered;
+ border-radius: 50%;
+	padding: 15px 10px;
+	color: #fff;
+	
+	
 }
 
 
@@ -289,6 +293,3 @@ box-shadow: 7px 6px 14px -8px rgba(0,0,0,0.75);
 	margin-top: -10px;
 }
 
-
-
-  
