@@ -7,7 +7,7 @@ var a = {
 
 $.ajax({
 type: "POST",
-url: "ajax.php",
+url: "../ajax.php",
 data: "value="+a.value+"&name="+a.name,
 success: function(html){
 $("#display").html(html).show();
@@ -21,6 +21,24 @@ $(document).ready(function(){
 	});
 	$("#mykopche").click(function() {
 		checkLights($('#mykopche'));
+	});
+	$("#mylivingroom").click(function() {
+		checkLights($('#mylivingroom'));
+	});
+	$("#mysecurity").click(function() {
+		checkLights($('#mysecurity'));
+	});
+	$("#mybedroom").click(function() {
+		checkLights($('#mybedroom'));
+	});
+	$("#myoutdoor").click(function() {
+		checkLights($('#myoutdoor'));
+	});
+	$("#myfrontdoor").click(function() {
+		checkLights($('#myfrontdoor'));
+	});
+	$("#mybackdoor").click(function() {
+		checkLights($('#mybackdoor'));
 	});
 });
 
@@ -102,3 +120,26 @@ $(document).ready(function () {
 
 });
 /* END OF JQUERY FOR SLIDING MENU*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

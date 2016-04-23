@@ -44,9 +44,9 @@ mysql_select_db("freeze",$query);
      
     
     <ul class="nav navbar-nav">
-     <li class="active"><a href="#">Home</a></li>
-     <li><a href="#about">About</a></li>
-     <li><a href="#contact">Contact</a></li>
+    <a href="#"><li class="active"><img src="source_files/homeicon.png" height="30" alt="home"/></li></a> 
+     <a href="pages/controller.php"><li class="active"><img src="source_files/offbtnn.png" height="30" alt="controls"/></li></a> 
+     <a href="pages/controls.php"><li class="active"><img src="source_files/eye.png" height="30" alt="controls"/></li></a> 
     
     
     </ul>
@@ -57,44 +57,23 @@ mysql_select_db("freeze",$query);
   
 
     <!-- Page Content -->
-    <div class="container">
 
-        <!-- Page Header -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                </h1>
-            </div>
-        </div>
-	</div>
         <!-- /.row -->
 
         <!-- Projects Row -->
 
-	
+
 <div class="container">
-    <div class="row">
-      <div class="span4"></div>
-        <div class="span4" ><img class="img-responsive center-block img-circle" src="http://placehold.it/350x150"/></div>
-      <div class="span4"></div>
-    </div>
+	<div class="row">
+		<div class="col-lg-10 col-lg-offset-1 text-center">
+		<p class="mainn">21°</p>
+			</div>
+	</div>
 </div>
+
+
+
 	
-<hr />	
-<div class="controls">
-<div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="#">Controls</a></p></div>
-             <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="#">View</a></p></div>
-			 <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="#">Warnings</a></p></div>
-			 <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="#">Visitors</a></p></div>
-			 <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="#">Security</a></p></div>
-			 <div class="col-xs-12 col-sm-6 col-md-4"><p><img src="source_files/offBtnn.png"class="img-responsive center-block" height="50" width="50"><a href="#">Settings</a></p></div>
-			
-         
-        </div>
-    </div>
- </div> 
 
 	
 	
@@ -107,66 +86,17 @@ mysql_select_db("freeze",$query);
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	<div class="onoffswitch">
-<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch"
-<?php  
-$query3=mysql_query("select * from choice where id=1");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "checked";
-}
-?> />
 
-
-
-	
-	
-<label class="onoffswitch-label" for="myonoffswitch">
-<div class="onoffswitch-inner"></div>
-<div class="onoffswitch-switch"></div>
-</label>
-</div>
-	
-<div class="kopche">
-<input type="checkbox" name="kopche" class="mykopche-checkbox" id="mykopche"
-<?php  
-$query3=mysql_query("select * from choice where id=2");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "checked";
-}
-?> />
-
-
-
-	
-	
-<label class="kopche-label" for="mykopche">
-<div class="kopche-inner"></div>
-<div class="kopche-switch"></div>
-</label>
-</div>
-	
 	
 
 	
 	
 	
 	
-	
-	<?php
-	$link_address = 'house.php';
-echo "<a href='$link_address'>View House</a>";
-?>
+
+
 	 <div class="footer"><p>kappa</p></div>
 </div>
+
 </body>
 </html>
