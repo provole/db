@@ -24,7 +24,8 @@ mysql_select_db("freeze",$query);
 
 	<script src="../jquery/jquery-2.2.0.min.js"></script>
 		<script type="text/javascript" src="../jquery/script.js"></script>
-
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
 
 
@@ -41,6 +42,8 @@ mysql_select_db("freeze",$query);
  */
 body {
   padding-top: 50px;
+  margin: 0;
+	font-family: serif;
   
 }
 footer {
@@ -89,11 +92,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 /* Sidebar navigation */
 .nav-sidebar {
   background-color: #f5f5f5;
+
   margin-right: -15px;
   margin-bottom: 20px;
   margin-left: -15px;
 }
 .nav-sidebar > li > a {
+  color: #111212;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -156,16 +161,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 
 <div class="container-fluid">
 	<div class="row row-offcanvas row-offcanvas-left">
-		<div class="col-sm- col-md-3 sidebar-offcanvas" id="sidebar" role="navigation">
+		<div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
            	<ul class="nav nav-sidebar">
 				<li><a class="indicator" href="#">Room</a></li>
-				<li class="active"><a href="#">Overview</a></li>
-              	<li><a href="kitchen.php">Kitchen</a></li>
+				<li><a href="overview.php">Overview</a></li>
+              	<li class="active"><a href="#" target="_ext">Kitchen</a></li>
               	<li><a href="http://bootstrap.theme.cards" target="_ext">Lounge</a></li>
               	<li><a href="https://wrapbootstrap.com?ref=skelly" target="_ext">Bathroom</a></li>
             
              	 <li><a href="">Garage</a></li>
-             	 <li><a href="">Bedroom</a></li>
+             	 <li><a href="bedroom.php">Bedroom</a></li>
 	              <li><a href="">House</a></li>
              	
             </ul>
@@ -195,12 +200,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
               						<div class="thumbnail">
                 					<div class="caption">
                   <!-- DISPLAYS STATUS IF ANYTHING IS UNLOCKED-->
-             						<h3 class="left">Status</h3>
-									<hr align="left" width="80%"/>
-									<img src="../source_files/security.png" class="security" width="70" height="70">
-									<p align="center">Security is 
-					<?php  
-$query3=mysql_query("select * from choice where id=4");
+										
+             					 <hr align="left" width="80%"/>
+					<img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Kitchen light is
+					  
+					  <?php  
+$query3=mysql_query("select * from choice where id=2");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
@@ -209,12 +214,16 @@ echo "OFF";
 						else{
 							echo "ON";
 						}
-						
-						?>
-<div class="security">
-<input type="checkbox" name="security" class="security-checkbox" id="mysecurity"
+?>
+					  
+					  
+					  
+					  
+					  
+					  </p><div class="kopche">
+<input type="checkbox" name="kopche" class="kopche-checkbox" id="mykopche"
 <?php  
-$query3=mysql_query("select * from choice where id=4");
+$query3=mysql_query("select * from choice where id=2");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
@@ -222,11 +231,110 @@ echo "checked";
 }
 ?> />
 
+<hr>
+
+	
+	
+<label class="kopche-label" for="mykopche">
+<div class="kopche-inner"></div>
+<div class="kopche-switch"></div>
+</label>
 </div>
+	  <style>
+  .toggler {
+    width: 500px;
+    height: 200px;
+  }
+  #button {
+    padding: .5em 1em;
+    text-decoration: none;
+  }
+  #effect {
+    position: relative;
+    width: 240px;
+    height: 135px;
+    padding: 0.4em;
+  }
+  #effect h3 {
+    margin: 0;
+    padding: 0.4em;
+    text-align: center;
+  }
+  </style>
+										
+
+										
+										
+										
+										
+										
+										
+										
+										
+										
+    <h3>Blinds</h3>										
+<div class="toggler">
+  <div id="effect" class="ui-widget-content ui-corner-all">
+
+   <img src="../source_files/blinds.png"  height="150" width="150"/>
+  </div>
+</div>
+ 
+<select name="effects" id="effectTypes">
+  <option value="blind">Blind</option>
+
+</select>
+ 
+<button id="button" class="ui-state-default ui-corner-all">Switch</button>
           
 								</div><!--/row-->
 								</div>
-								</div><!--/.container-->
+								</div>
+						
+
+
+	
+	
+
+
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+
+																				 <script>
+  $(function() {
+    // run the currently selected effect
+    function runEffect() {
+      // get effect type from
+      var selectedEffect = $( "#effectTypes" ).val();
+ 
+      // most effect types need no options passed by default
+      var options = {};
+      // some effects have required parameters
+      if ( selectedEffect === "scale" ) {
+        options = { percent: 0 };
+      } else if ( selectedEffect === "size" ) {
+        options = { to: { width: 200, height: 60 } };
+      }
+ 
+      // run the effect
+      $( "#effect" ).toggle( selectedEffect, options, 500 );
+    };
+ 
+    // set effect from select menu value
+    $( "#button" ).click(function() {
+      runEffect();
+    });
+  });
+  </script>
+          
 						</div>
 		  </div>    
 			</div>
@@ -235,7 +343,7 @@ echo "checked";
 	</div>
 		
 		
-		</div></div><!--/span--></div></div>
+		</div><!--/span--></div></div>
         
     </body>
 </html>

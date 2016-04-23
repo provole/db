@@ -44,9 +44,9 @@ mysql_select_db("freeze",$query);
      
     
     <ul class="nav navbar-nav">
-      <a href="../index.php"><li class="active"><img src="../source_files/homeicon.png" height="30"/></li></a> 
-     <a href="#/controls.php"><li class="active"><img src="../source_files/offbtnn.png" height="30"/></li></a> 
-     <li><a href="overview.php">Overview</a></li>
+      <a href="../index.php"><li><img src="../source_files/homeicon.png" height="30"/></li></a> 
+     <a href="controller.php"><li><img src="../source_files/offbtnn.png" height="30"/></li></a> 
+     <a href="controls.php"><li class="active"><img src="../source_files/eye.png" height="30" alt="controls"/></li></a> 
     
     
     </ul>
