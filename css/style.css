@@ -219,7 +219,21 @@ text-align:center;
 border: 1px solid white;
 	margin-top: 100px;
 }
+@media (max-width: 768px) {
+  .mainn {
 
+  width:300px;
+margin: 0 auto;
+border-radius:50%;
+font-size:50px;
+color:#fff;
+line-height:280px;
+text-align:center;
+border: 1px solid white;
+  margin-top: 100px;
+}
+
+}
 .controls p{
 	padding: 30px;
         font-size: 26px;
@@ -346,6 +360,7 @@ box-shadow: 7px 6px 14px -8px rgba(0,0,0,0.75);
     padding-right: 40px;
     padding-left: 40px;
   }
+
 }
 .main .page-header {
   margin-top: 0;
@@ -402,3 +417,14 @@ box-shadow: 7px 6px 14px -8px rgba(0,0,0,0.75);
 }
 		
 /* END OF NAV SIDER IN OVERVIEW PAGE */
+
+#message{
+  font-size:30px;
+  color: #fff;
+  font-family: 'Damascus';
+}
+
+#time{
+  color:#fff;
+  font-size:16px;
+}

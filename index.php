@@ -39,7 +39,7 @@ mysql_select_db("freeze",$query);
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
      </a>
-    <a class="navbar-brand" href="#">Project name</a>
+    <a class="navbar-brand" href="#"></a>
    </div>
    <div id="slidemenu">
      
@@ -67,12 +67,65 @@ mysql_select_db("freeze",$query);
 <div class="container">
 	<div class="row">
 		<div class="col-lg-10 col-lg-offset-1 text-center">
+		  <p id="message"></p>
+			
+		<p id="time"></p>
+
+		<script>
+			var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+
+if(dd<10) {
+    dd='0'+dd
+} 
+
+if(mm<10) {
+    mm='0'+mm
+} 
+
+today = mm+'/'+dd+'/'+yyyy;
+document.getElementById("time").innerHTML = today;
+		</script>
 		<p class="mainn">21°</p>
+		
 			</div>
 	</div>
 </div>
 
 
+  
+<script language="JavaScript"> 
+var myDate = new Date(); 
+  
+  
+/* hour is before noon */
+if ( myDate.getHours() < 12 )  
+{ 
+    document.write("Good Morning!"); 
+} 
+else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
+if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 ) 
+{ 
+    document.write("Good Afternoon!"); 
+} 
+else  /* the hour is after 5pm, so it is between 6pm and midnight */
+if ( myDate.getHours() > 17 && myDate.getHours() <= 24 ) 
+{ 
+	var a = "Good evening";
+    document.getElementById("message").innerHTML = a;
+} 
+else  /* the hour is not between 0 and 24, so something is wrong */
+{ 
+    document.write("I'm not sure what time it is!"); 
+} 
+  
+/* remove the following in your live script. It is for testing */
+
+
+  
+</script> 
 
 	
 	
