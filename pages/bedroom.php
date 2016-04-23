@@ -340,7 +340,9 @@ echo "checked";
 			</div>
 					
 					<div class="row">
-						<p>test</p>
+						<div class="col-md-4">
+							
+						</div>
 					</div>
 					
 					
