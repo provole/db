@@ -135,8 +135,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
                 <li><a href="controller.php">Overview</a></li>
                 <li><a href="kitchen.php"><img src="../source_files/kitchen.png" height="25" width="30" /> Kitchen</a></li>
                 <li><a href="lounge.php"><img src="../source_files/lounge.png" height="25" width="30" /> Lounge</a></li>
-                 <li class="active"><a href="#"><img src="../source_files/bathroom.png" height="25" width="30" /> Bathroom</a></li>
-                <li><a href="garage.php"><img src="../source_files/garage.png" height="25" width="30" /> Garage</a></li>
+                 <li><a href="bathroom.php"><img src="../source_files/bathroom.png" height="25" width="30" /> Bathroom</a></li>
+                <li class="active"><a href="#"><img src="../source_files/garage.png" height="25" width="30" /> Garage</a></li>
                  <li><a href="house.php"><img src="../source_files/house.png" height="25" width="30" /> House</a></li>
                 <li><a href="bedroom.php"><img src="../source_files/bedroom.png" height="25" width="30" /> Bedroom</a></li> 
             </ul>
@@ -168,10 +168,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
                   <!-- DISPLAYS STATUS IF ANYTHING IS UNLOCKED-->
 										
              					 <hr align="left" width="80%"/>
-					<img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Bathroom light is
+					<img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Garage light is
 					  
 					  <?php  
-$query3=mysql_query("select * from choice where id=9");
+$query3=mysql_query("select * from choice where id=11");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
@@ -186,10 +186,10 @@ echo "OFF";
 					  
 					  
 					  
-					  </p><div class="bathroom">
-<input type="checkbox" name="bathroom" class="bathroom-checkbox" id="mybathroom"
+					  </p><div class="garage">
+<input type="checkbox" name="garage" class="garage-checkbox" id="mygarage"
 <?php  
-$query3=mysql_query("select * from choice where id=9");
+$query3=mysql_query("select * from choice where id=11");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
@@ -201,9 +201,9 @@ echo "checked";
 
 	
 	
-<label class="bathroom-label" for="mybathroom">
-<div class="bathroom-inner"></div>
-<div class="bathroom-switch"></div>
+<label class="garage-label" for="mygarage">
+<div class="garage-inner"></div>
+<div class="garage-switch"></div>
 </label>
 </div>
 	  <style>

@@ -130,17 +130,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 <div class="container-fluid">
 	<div class="row row-offcanvas row-offcanvas-left">
 		<div class="col-sm-3 col-md-2" id="sidebar" role="navigation">
-           	<ul class="nav nav-sidebar">
-				<li><a class="indicator" href="#">Room</a></li>
-				<li><a href="overview.php">Overview</a></li>
-              	<li class="active"><a href="#" target="_ext">Kitchen</a></li>
-              	<li><a href="http://bootstrap.theme.cards" target="_ext">Lounge</a></li>
-              	<li><a href="https://wrapbootstrap.com?ref=skelly" target="_ext">Bathroom</a></li>
-            
-             	 <li><a href="">Garage</a></li>
-             	 <li><a href="bedroom.php">Bedroom</a></li>
-	              <li><a href="">House</a></li>
-             	
+            <ul class="nav nav-sidebar">
+               
+                <li><a href="controller.php">Overview</a></li>
+                <li class="active"><a href="#"><img src="../source_files/kitchen.png" height="25" width="30" /> Kitchen</a></li>
+                <li><a href="lounge.php"><img src="../source_files/lounge.png" height="25" width="30" /> Lounge</a></li>
+                 <li><a href="bathroom.php"><img src="../source_files/bathroom.png" height="25" width="30" /> Bathroom</a></li>
+                <li><a href="garage.php"><img src="../source_files/garage.png" height="25" width="30" /> Garage</a></li>
+                 <li><a href="house.php"><img src="../source_files/house.png" height="25" width="30" /> House</a></li>
+                <li><a href="bedroom.php"><img src="../source_files/bedroom.png" height="25" width="30" /> Bedroom</a></li> 
             </ul>
 		</div><!--/span-->
         

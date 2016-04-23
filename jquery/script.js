@@ -70,6 +70,12 @@ $(document).ready(function(){
     $("#mybathroom").click(function() {
         checkLights($('#mybathroom'));
     });
+    $("#mylounge").click(function() {
+        checkLights($('#mylounge'));
+    });
+    $("#mygarage").click(function() {
+        checkLights($('#mygarage'));
+    });
 });
 
 $(document).ready( function(){

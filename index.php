@@ -103,12 +103,14 @@ var myDate = new Date();
 /* hour is before noon */
 if ( myDate.getHours() < 12 )  
 { 
-    document.write("Good Morning!"); 
+    var c = "Good Morning";
+    document.getElementById("message").innerHTML = c;
 } 
 else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
 if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 ) 
 { 
-    document.write("Good Afternoon!"); 
+    var b = "Good Afternoon";
+    document.getElementById("message").innerHTML = b;
 } 
 else  /* the hour is after 5pm, so it is between 6pm and midnight */
 if ( myDate.getHours() > 17 && myDate.getHours() <= 24 ) 

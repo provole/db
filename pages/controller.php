@@ -97,8 +97,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
     <body  >
         <div class="bgColor">
      <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="slide-nav">
-  <div class="container">
-   <div class="navbar-header">
+        <div class="container">
+        <div class="navbar-header">
     <a class="navbar-toggle"> 
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
@@ -130,13 +130,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 		           
 				        <li class="active"><a href="#">Overview</a></li>
               	<li><a href="kitchen.php"><img src="../source_files/kitchen.png" height="25" width="30" /> Kitchen</a></li>
-              	<li><a href="#"><img src="../source_files/lounge.png" height="25" width="30" /> Lounge</a></li>
-              	 <li><a href="#"><img src="../source_files/bathroom.png" height="25" width="30" /> Bathroom</a></li>
-            
-             	  <li><a href="#"><img src="../source_files/garage.png" height="25" width="30" /> Garage</a></li>
-             	 
-	               <li><a href="#"><img src="../source_files/house.png" height="25" width="30" /> House</a></li>
-             	  <li><a href="#"><img src="../source_files/bedroom.png" height="25" width="30" /> Bedroom</a></li> 
+              	<li><a href="lounge.php"><img src="../source_files/lounge.png" height="25" width="30" /> Lounge</a></li>
+              	 <li><a href="bathroom.php"><img src="../source_files/bathroom.png" height="25" width="30" /> Bathroom</a></li>
+             	  <li><a href="garage.php"><img src="../source_files/garage.png" height="25" width="30" /> Garage</a></li>
+	               <li><a href="house.php"><img src="../source_files/house.png" height="25" width="30" /> House</a></li>
+             	  <li><a href="bedroom.php"><img src="../source_files/bedroom.png" height="25" width="30" /> Bedroom</a></li> 
             </ul>
 		</div><!--/span-->
         
