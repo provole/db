@@ -15,7 +15,6 @@ mysql_select_db("freeze",$query);
         <meta name="description" content="Example of the Bootstrap dashboard teplate with a  collapsible offcanvas sidebar. The left sidebar collaspes on smaller screens and can be toggled." />
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/nav.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
          <link rel="stylesheet" type="text/css" href="../css/sidenav.css">
         <!--[if lt IE 9]>
           <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -45,7 +44,7 @@ mysql_select_db("freeze",$query);
 body {
   padding-top: 50px;
   margin: 0;
-
+	font-family: serif;
   
 }
 footer {
@@ -65,6 +64,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
  * Off Canvas
  * --------------------------------------------------
  */
+@media screen and (max-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -33%;
+  }
+
+  .row-offcanvas-left.active {
+    left: 33%;
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 33%;
+    margin-left: 10px;
+  }
+}
+
+
+/* Sidebar navigation */
+
 
         </style>
     </head>
@@ -73,7 +100,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
     
     <body  >
         <div class="bgColor">
-       <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="slide-nav">
+         
+     <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="slide-nav">
   <div class="container">
    <div class="navbar-header">
     <a class="navbar-toggle"> 
@@ -107,10 +135,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 				<li><a href="overview.php">Overview</a></li>
               	<li><a href="kitchen.php" target="_ext">Kitchen</a></li>
               	<li><a href="http://bootstrap.theme.cards" target="_ext">Lounge</a></li>
-              	<li><a href="https://wrapbootstrap.com?ref=skelly" target="_ext">Bathroom</a></li>
+              	<li class="active"><a href="#" target="_ext">Bathroom</a></li>
             
              	 <li><a href="">Garage</a></li>
-             	 <li class="active"><a href="">Bedroom</a></li>
+             	 <li><a href="bedroom.php">Bedroom</a></li>
 	              <li><a href="">House</a></li>
              	
             </ul>
@@ -142,10 +170,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
                   <!-- DISPLAYS STATUS IF ANYTHING IS UNLOCKED-->
 										
              					 <hr align="left" width="80%"/>
-					<img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Bedroom light is
+					<img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Bathroom light is
 					  
 					  <?php  
-$query3=mysql_query("select * from choice where id=5");
+$query3=mysql_query("select * from choice where id=9");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
@@ -160,10 +188,10 @@ echo "OFF";
 					  
 					  
 					  
-					  </p><div class="bedroom">
-<input type="checkbox" name="bedroom" class="bedroom-checkbox" id="mybedroom"
+					  </p><div class="bathroom">
+<input type="checkbox" name="bathroom" class="bathroom-checkbox" id="mybathroom"
 <?php  
-$query3=mysql_query("select * from choice where id=5");
+$query3=mysql_query("select * from choice where id=9");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
@@ -175,9 +203,9 @@ echo "checked";
 
 	
 	
-<label class="bedroom-label" for="mybedroom">
-<div class="bedroom-inner"></div>
-<div class="bedroom-switch"></div>
+<label class="bathroom-label" for="mybathroom">
+<div class="bathroom-inner"></div>
+<div class="bathroom-switch"></div>
 </label>
 </div>
 	  <style>
@@ -231,45 +259,7 @@ echo "checked";
 								</div>
 								</div>
 						
-          <div class="col-md-4">            
-                          <div class="thumbnail">
-                          <div class="caption">
-                  <!-- DISPLAYS STATUS IF ANYTHING IS UNLOCKED-->
-                    
-                       <hr align="left" width="80%"/>
-          <img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Bedroom light is
-            
-            <?php  
-$query3=mysql_query("select * from choice where id=5");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "OFF";
-}
-            else{
-              echo "ON";
-            }
-?>
-            
-            
-            
-            
-            
-            </p><div class="bedroom">
-<input type="checkbox" name="bedroom" class="bedroom-checkbox" id="mybedroom"
-<?php  
-$query3=mysql_query("select * from choice where id=5");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "checked";
-}
-?> />
 
-
-                </div><!--/row-->
-                </div>
-                </div>
 
 	
 	
@@ -316,15 +306,6 @@ echo "checked";
 						</div>
 		  </div>    
 			</div>
-					
-					<div class="row">
-						<div class="col-md-4">
-							
-						</div>
-					</div>
-					
-					
-					
 		</div>
 		</section>
 	</div>

@@ -12,6 +12,7 @@ mysql_select_db("freeze",$query);
 <title>Smart Home</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/nav.css">
 	 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 <script type="text/javascript"src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
 
@@ -29,7 +30,7 @@ mysql_select_db("freeze",$query);
  <div class="bgColor">
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="slide-nav">
+<div class="navbar navbar-default navbar-static-top" role="navigation" id="slide-nav">
   <div class="container">
    <div class="navbar-header">
     <a class="navbar-toggle"> 
@@ -73,12 +74,6 @@ mysql_select_db("freeze",$query);
 
 
 
-	
-
-	
-	
-	
-	
 	
 	
 	

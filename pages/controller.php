@@ -15,6 +15,7 @@ mysql_select_db("freeze",$query);
         <meta name="description" content="Example of the Bootstrap dashboard teplate with a  collapsible offcanvas sidebar. The left sidebar collaspes on smaller screens and can be toggled." />
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/nav.css">
+        <link rel="stylesheet" type="text/css" href="../css/sidenav.css">
         <!--[if lt IE 9]>
           <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -41,7 +42,7 @@ mysql_select_db("freeze",$query);
  */
 body {
   padding-top: 50px;
-  
+ 
 }
 footer {
   padding-left: 15px;
@@ -87,42 +88,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 
 
 /* Sidebar navigation */
-.nav-sidebar {
-  background-color: #f5f5f5;
-  margin-right: -15px;
-  margin-bottom: 20px;
-  margin-left: -15px;
-}
-.nav-sidebar > li > a {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.nav-sidebar > .active > a {
-  color: #fff;
-  background-color: #428bca;
-}
-			.nav-sidebar> li > .indicator{
-				font-size: 20px;
-				color: #111212;
-				font-weight: bold;
-			}
-/*
- * Main content
- */
-
-.main {
-  padding: 20px;
-  background-color: #fff;
-}
-@media (min-width: 768px) {
-  .main {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-}
-.main .page-header {
-  margin-top: 0;
-}
 
         </style>
     </head>
@@ -159,7 +124,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 
 <div class="container-fluid">
 	<div class="row row-offcanvas row-offcanvas-left">
-		<div class="col-sm- col-md-3 sidebar-offcanvas" id="sidebar" role="navigation">
+		<div class="col-sm- col-md-3" id="sidebar" role="navigation">
            	<ul class="nav nav-sidebar">
 				<li><a class="indicator" href="#">Room</a></li>
 				<li class="active"><a href="#">Overview</a></li>
@@ -168,7 +133,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
               	<li><a href="https://wrapbootstrap.com?ref=skelly" target="_ext">Bathroom</a></li>
             
              	 <li><a href="">Garage</a></li>
-             	 <li><a href="">Bedroom</a></li>
+             	 <li><a href="bedroom.php">Bedroom</a></li>
 	              <li><a href="">House</a></li>
              	
             </ul>
@@ -176,7 +141,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
         
 <div class="col-sm- col-md-8 main">
  			<p class="visible-xs">
-            	<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+            	<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><a href="../index.php"><i class="glyphicon glyphicon-chevron-left"></i></a></button>
 			</p>
           
 		  <h1 class="page-header">
@@ -224,6 +189,16 @@ if($query4['choice']=="off")
 echo "checked";
 }
 ?> />
+
+      <?php
+      $query3=mysql_query("select * from choice where id=8");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "\n<br/> Back door is unlocked";
+}
+      
+?>
 
 </div>
           

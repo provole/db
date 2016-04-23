@@ -40,6 +40,9 @@ $(document).ready(function(){
 	$("#mybackdoor").click(function() {
 		checkLights($('#mybackdoor'));
 	});
+    $("#mybathroom").click(function() {
+        checkLights($('#mybathroom'));
+    });
 });
 
 $(document).ready( function(){
