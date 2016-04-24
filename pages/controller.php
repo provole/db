@@ -84,9 +84,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
     width: 33%;
     margin-left: 10px;
   }
+
 }
 
-
+  
 /* Sidebar navigation */
 
         </style>
@@ -121,14 +122,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
    </div>
   </div>
  </div>
+<div class="container-fluid">
+  <div class="row row-offcanvas row-offcanvas-left">
+    <div class="col-sm- col-md-3" id="sidebar" role="navigation">
+     
+            <ul class="nav nav-sidebarTwo">
+               
+                <li class="active"><a href="#">Room</a></li>
+                <li><a href="#">Category</a></li>
 
+                
+            </ul>
+    </div><!--/span-->
+    </div>
+    </div>
+
+</div>
 <div class="container-fluid">
 	<div class="row row-offcanvas row-offcanvas-left">
-		<div class="col-sm- col-md-3" id="sidebar" role="navigation">
+		<div class="col-sm-3 col-md-3" id="sidebar" role="navigation">
      
            	<ul class="nav nav-sidebar">
 		           
-				        <li class="active"><a href="#">Overview</a></li>
+				     
               	<li><a href="kitchen.php"><img src="../source_files/kitchen.png" height="25" width="30" /> Kitchen</a></li>
               	<li><a href="lounge.php"><img src="../source_files/lounge.png" height="25" width="30" /> Lounge</a></li>
               	 <li><a href="bathroom.php"><img src="../source_files/bathroom.png" height="25" width="30" /> Bathroom</a></li>

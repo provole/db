@@ -98,10 +98,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
    </div>
   </div>
  </div>
+<div class="container-fluid">
+  <div class="row row-offcanvas row-offcanvas-left">
+    <div class="col-sm- col-md-3" id="sidebar" role="navigation">
+     
+            <ul class="nav nav-sidebarTwo">
+               
+                <li class="active"><a href="#">Room</a></li>
+                <li><a href="#">Category</a></li>
 
+                
+            </ul>
+    </div><!--/span-->
+    </div>
+    </div>
 <div class="container-fluid">
 	<div class="row row-offcanvas row-offcanvas-left">
-		<div class="col-sm-3 col-md-2" id="sidebar" role="navigation">
+		<div class="col-sm-3 col-md-3" id="sidebar" role="navigation">
            	<ul class="nav nav-sidebar">
                
                 <li><a href="controller.php">Overview</a></li>
@@ -147,10 +160,10 @@ $query3=mysql_query("select * from choice where id=5");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
-echo "OFF";
+echo 'OFF <input type="hidden" id="lightOppositeValue" value="on">';
 }
 						else{
-							echo "ON";
+							echo 'ON <input type="hidden" id="lightOppositeValue" value="off">';
 						}
 ?>
 					 
@@ -202,7 +215,15 @@ function startTimer() {
   setTimer(userInput, {
     10: function () { display("notifier", "Just 10 seconds to go"); },
      5: function () { display("notifier", "5 seconds left");        },
-     0: function () { display("notifier", "Time is up");       }
+     0: function () { 
+          display("notifier", "Time is up");
+
+          $.ajax({
+            type: "POST",
+            url: "../ajax.php",
+            data: "value="+$('#lightOppositeValue').val()+"&name=bedroom"
+            });
+        }
      
   }); 
 }  
