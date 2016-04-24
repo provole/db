@@ -375,12 +375,29 @@ echo "checked";
                   <div class="col-md-6">            
                     <div class="thumbnail">
                       <div class="caption">
-                        <h3 class="left">Energy History</h3>
-						  <hr align="left" width="80%"/>
-                        <p>For my Web Programming Assignment 2 I had to build a film recommendation engine on the web. The user can enter preferences such as genre, year of release etc. and then provide suggestions.</p>
-                        <p><a href="https://selene.hud.ac.uk/u1350847/assign2/index.html" class="label label-danger" rel="tooltip" title="Open">Open</a>
+                        <h3 class="left">Lighting</h3>
+					  <P align="left">Home	<div class="away">
+<input type="checkbox" name="away" class="away-checkbox" id="myaway"
+<?php  
+$query3=mysql_query("select * from choice where id=12");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "checked";
+}
+?> />
+
+
+
+	
+	
+<label class="away-label" for="myaway">
+<div class="away-inner"></div>
+<div class="away-switch"></div>
+</label>
+</div></P>
                         </div>
-                        <img src="portfolio_pics/javascript.png" alt="...">
+                       
                       </div>
                     </div>        
                     <!-- /.row -->

@@ -128,8 +128,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
      
             <ul class="nav nav-sidebarTwo">
                
-                <li class="active"><a href="#">Room</a></li>
-                <li><a href="controllerTwo.php">Category</a></li>
+                <li><a href="controller.php">Room</a></li>
+                <li class="active"><a href="#">Category</a></li>
 
                 
             </ul>
@@ -145,12 +145,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
            	<ul class="nav nav-sidebar">
 		           
 				     
-              	<li><a href="kitchen.php"><img src="../source_files/kitchen.png" height="25" width="30" /> Kitchen</a></li>
-              	<li><a href="lounge.php"><img src="../source_files/lounge.png" height="25" width="30" /> Lounge</a></li>
-              	 <li><a href="bathroom.php"><img src="../source_files/bathroom.png" height="25" width="30" /> Bathroom</a></li>
-             	  <li><a href="garage.php"><img src="../source_files/garage.png" height="25" width="30" /> Garage</a></li>
-	               <li><a href="house.php"><img src="../source_files/house.png" height="25" width="30" /> House</a></li>
-             	  <li><a href="bedroom.php"><img src="../source_files/bedroom.png" height="25" width="30" /> Bedroom</a></li> 
+              	<li><a href="heating.php"><img src="../source_files/heating.png" height="25" width="30" /> Heating</a></li>
+                <li><a href="lighting.php"><img src="../source_files/lights.png" height="25" width="30" /> Lighting</a></li>
+                 <li><a href="access.php"><img src="../source_files/bathroom.png" height="25" width="30" /> Access</a></li>
+                <li class="active"><a href="alarm.php"><img src="../source_files/alarm.png" height="25" width="30" /> Alarm</a></li>
+                 <li><a href="energy.php"><img src="../source_files/energ.png" height="25" width="30" /> Energy</a></li>
+                <li><a href="monitoring.php"><img src="../source_files/monitoring.png" height="25" width="30" /> Monitoring</a></li> 
+                <li><a href="shading.php"><img src="../source_files/shading.png" height="25" width="30" /> Shading</a></li> 
             </ul>
 		</div><!--/span-->
         
@@ -174,27 +175,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
         				<div class="col-lg-10 col-lg-offset-1 text-center">
 
           					<div class="row">
-            					<div class="col-md-4">            
-              						<div class="thumbnail">
-                					<div class="caption">
+
+                                  <div class="col-md-4">            
+              <div class="thumbnail">
+                <div class="caption">
                   <!-- DISPLAYS STATUS IF ANYTHING IS UNLOCKED-->
-             						<h3 class="left">Status</h3>
-									<hr align="left" width="80%"/>
-									<img src="../source_files/security.png" class="security" width="70" height="70">
-									<p align="center">Security is 
-					<?php  
+                <h3 class="left"><img src="../source_files/location.png" height="30" />Whole House</h3>
+          <hr align="left" width="80%"/>
+          <img src="../source_files/security.png" class="security" width="70" height="70">
+          <p align="center">Security is 
+          <?php  
 $query3=mysql_query("select * from choice where id=4");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
 echo "OFF";
 }
-						else{
-							echo "ON";
-						}
-						
-						?>
-<div class="security">
+            else{
+              echo "ON";
+            }
+ 
+?>
+          </p>
+          <div class="security">
 <input type="checkbox" name="security" class="security-checkbox" id="mysecurity"
 <?php  
 $query3=mysql_query("select * from choice where id=4");
@@ -205,21 +208,34 @@ echo "checked";
 }
 ?> />
 
-      <?php
-      $query3=mysql_query("select * from choice where id=8");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "\n<br/> Back door is unlocked";
-}
-      
-?>
 
+
+  
+  
+<label class="security-label" for="mysecurity">
+<div class="security-inner"></div>
+<div class="security-switch"></div>
+</label>
 </div>
           
-								</div><!--/row-->
-								</div>
-								</div><!--/.container-->
+          
+          <br><hr align="left" width="80%"/>
+          
+          <!-- <p align="left">There are 2 doors unlocked</p> -->
+          
+
+
+          </div>
+                  
+                </div>
+              </div>
+            
+            
+            
+                    </div>
+                   
+                  </div>
+                </div>
 						</div>
 		  </div>    
 			</div>

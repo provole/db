@@ -25,6 +25,7 @@ mysql_select_db("freeze",$query);
 
 	<script src="../jquery/jquery-2.2.0.min.js"></script>
 		<script type="text/javascript" src="../jquery/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 
 
 
@@ -128,8 +129,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
      
             <ul class="nav nav-sidebarTwo">
                
-                <li class="active"><a href="#">Room</a></li>
-                <li><a href="controllerTwo.php">Category</a></li>
+                <li><a href="controller.php">Room</a></li>
+                <li class="active"><a href="#">Category</a></li>
 
                 
             </ul>
@@ -145,12 +146,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
            	<ul class="nav nav-sidebar">
 		           
 				     
-              	<li><a href="kitchen.php"><img src="../source_files/kitchen.png" height="25" width="30" /> Kitchen</a></li>
-              	<li><a href="lounge.php"><img src="../source_files/lounge.png" height="25" width="30" /> Lounge</a></li>
-              	 <li><a href="bathroom.php"><img src="../source_files/bathroom.png" height="25" width="30" /> Bathroom</a></li>
-             	  <li><a href="garage.php"><img src="../source_files/garage.png" height="25" width="30" /> Garage</a></li>
-	               <li><a href="house.php"><img src="../source_files/house.png" height="25" width="30" /> House</a></li>
-             	  <li><a href="bedroom.php"><img src="../source_files/bedroom.png" height="25" width="30" /> Bedroom</a></li> 
+              	<li><a href="heating.php"><img src="../source_files/heating.png" height="25" width="30" /> Heating</a></li>
+                <li><a href="lighting.php"><img src="../source_files/lights.png" height="25" width="30" /> Lighting</a></li>
+                 <li><a href="access.php"><img src="../source_files/bathroom.png" height="25" width="30" /> Access</a></li>
+                <li><a href="alarm.php"><img src="../source_files/alarm.png" height="25" width="30" /> Alarm</a></li>
+                 <li class="active"><a href="energy.php"><img src="../source_files/energ.png" height="25" width="30" /> Energy</a></li>
+                <li><a href="monitoring.php"><img src="../source_files/monitoring.png" height="25" width="30" /> Monitoring</a></li> 
+                <li><a href="shading.php"><img src="../source_files/shading.png" height="25" width="30" /> Shading</a></li> 
             </ul>
 		</div><!--/span-->
         
@@ -174,61 +176,111 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
         				<div class="col-lg-10 col-lg-offset-1 text-center">
 
           					<div class="row">
-            					<div class="col-md-4">            
-              						<div class="thumbnail">
-                					<div class="caption">
+
+              <div class="col-md-4">            
+                  <div class="thumbnail">
+                      <div class="caption">
                   <!-- DISPLAYS STATUS IF ANYTHING IS UNLOCKED-->
-             						<h3 class="left">Status</h3>
-									<hr align="left" width="80%"/>
-									<img src="../source_files/security.png" class="security" width="70" height="70">
-									<p align="center">Security is 
-					<?php  
-$query3=mysql_query("select * from choice where id=4");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "OFF";
+                        <h3 align="left" class="left">Energy</h3>
+                        <hr align="left" width="80%"/>
+         
+                                 <p style="text-align:right">
+                         <span style="float:left">AV Consumption</span>
+                         0W
+                        </p>
+                        <p align="right">9.7 kWh</p>
+                        
+
+                      </div>
+ <canvas id="canvas"></canvas>
+                   </div>
+              </div>
+           
+              <div class="col-md-4">            
+                  <div class="thumbnail">
+                      <div class="caption">
+                  <!-- DISPLAYS STATUS IF ANYTHING IS UNLOCKED-->
+                        <h3 class="green">58 kWh</h3>
+                        <p class="green">Energy Production</p>
+                           <p style="text-align:right">
+                         <span style="float:left"><img src="../source_files/leaf.png" height="50" /></span>
+                         38kWh...............Today
+                          <p style="text-align:right">38kWh...............May</p>
+                          <p style="text-align:right">38kWh...............2016</p>
+                        </p>
+                        <hr />
+                        <h3 class="green">7.2kg</h3>
+                        <p class="green">CO2 Reduction</p>
+                           <p style="text-align:right">
+                         <span style="float:left"><img src="../source_files/tree.png" height="50" /></span>
+                        0.6...............Today
+                          <p style="text-align:right">7.2...............May</p>
+                          <p style="text-align:right">7.2...............2016</p>
+                        </p>
+                       
+                        <hr />
+                        <h3 class="green">£ 4.2</h3>
+                        <p class="green">Income</p>
+                           <p style="text-align:right">
+                         <span style="float:left"><img src="../source_files/money.png" height="50" /></span>
+                         £ 0.35...............Today
+                          <p style="text-align:right">£6.38...............May</p>
+                          <p style="text-align:right">£6.38...............2016</p>
+                         
+                        </p>
+                       
+                          
+
+                      </div>
+                   </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              
+  
+      </div>
+
+            </section>
+  </div>
+    
+
+
+                 
+                  <script>
+                    
+
+var dData = function() {
+  return Math.round(Math.random() * 90) + 10
+};
+
+var barChartData = {
+  labels: ["August", "September", "October", "November", "December", "January", "February", "March", "April", "May"],
+  datasets: [{
+    fillColor: "green",
+    strokeColor: "black",
+    data: [dData(23), dData(), dData(), dData(), dData(), dData(), dData(), dData(), dData(), dData()]
+
+  }]
+
 }
-						else{
-							echo "ON";
-						}
+
+var index = 11;
+var ctx = document.getElementById("canvas").getContext("2d");
+var barChartDemo = new Chart(ctx).Bar(barChartData, {
+  responsive: true,
+  barValueSpacing: 2
+});
+setInterval(function() {
+
+ 
+  index++;
+}, 3000);
+
+
+                  </script>
 						
-						?>
-<div class="security">
-<input type="checkbox" name="security" class="security-checkbox" id="mysecurity"
-<?php  
-$query3=mysql_query("select * from choice where id=4");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "checked";
-}
-?> />
-
-      <?php
-      $query3=mysql_query("select * from choice where id=8");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "\n<br/> Back door is unlocked";
-}
-      
-?>
-
-</div>
-          
-								</div><!--/row-->
-								</div>
-								</div><!--/.container-->
-						</div>
-		  </div>    
-			</div>
-		</div>
-		</section>
-	</div>
-		
-		
-		</div></div><!--/span--></div></div>
+		    
         
     </body>
 </html>
