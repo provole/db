@@ -44,7 +44,7 @@ mysql_select_db("freeze",$query);
 body {
   padding-top: 50px;
   margin: 0;
-	font-family: serif;
+
   
 }
 footer {
@@ -133,7 +133,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
             <ul class="nav nav-sidebarTwo">
                
                 <li class="active"><a href="#">Room</a></li>
-                <li><a href="#">Category</a></li>
+                <li><a href="controllerTwo.php">Category</a></li>
 
                 
             </ul>
@@ -161,7 +161,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 			</p>
           
 		  <h1 class="page-header">
-            Dashboard
+            Kitchen
            
           </h1>
 

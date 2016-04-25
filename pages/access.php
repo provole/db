@@ -162,7 +162,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 			</p>
           
 		  <h1 class="page-header">
-            Dashboard
+            Access
            
           </h1>
 
@@ -238,68 +238,7 @@ echo "checked";
                    
                   </div>
                 </div>
-                <div class="col-md-4">            
-                <div class="thumbnail">
-                  <div class="caption">
-             
-                   <h3 class="left">Locks</h3>
-                   <hr align="left" width="80%"/>
-          <img class="security" src="../source_files/Graphicloads-Colorful-Long-Shadow-Lock%20(1).ico" width="40" height="40" align="left"> <p>Front door is locked</p>
 
-<div class="frontdoor">
-<input type="checkbox" name="frontdoor" class="frontdoor-checkbox" id="myfrontdoor"
-<?php  
-$query3=mysql_query("select * from choice where id=7");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "checked";
-}
-?> />
-
-
-
-  
-  
-<label class="frontdoor-label" for="myfrontdoor">
-<div class="frontdoor-inner"></div>
-<div class="frontdoor-switch"></div>
-</label>
-</div>
-
-            
-            <hr align="left" width="80%"/>
-            <img class="security" src="../source_files/Graphicloads-100-Flat-Unlock.ico" width="40" height="40" align="left">
-               <p>Back door is unlocked</p>
-               
-            <div class="backdoor">
-<input type="checkbox" name="backdoor" class="backdoor-checkbox" id="mybackdoor"
-<?php  
-$query3=mysql_query("select * from choice where id=8");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "checked";
-}
-?> />
-
-
-
-  
-  
-<label class="backdoor-label" for="mybackdoor">
-<div class="backdoor-inner"></div>
-<div class="backdoor-switch"></div>
-</label>
-</div>
-            
-            
-            
-            
-                    </div>
-                   
-                  </div>
-                </div>
 						</div>
 		  </div>    
 			</div>

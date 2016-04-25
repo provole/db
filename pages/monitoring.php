@@ -161,7 +161,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 			</p>
           
 		  <h1 class="page-header">
-            Dashboard
+            Monitoring
            
           </h1>
 
