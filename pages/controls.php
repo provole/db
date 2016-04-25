@@ -102,21 +102,7 @@ echo "OFF";
 							echo "ON";
 						}
 						
-	$query3=mysql_query("select * from choice where id=7");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "\n<br/> Front door is unlocked";
-}
-				
-				
-						
-			$query3=mysql_query("select * from choice where id=8");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "\n<br/> Back door is unlocked";
-}
+	
 			
 ?>
 					</p>
@@ -143,9 +129,35 @@ echo "checked";
 					
 					
 					<br><hr align="left" width="80%"/>
+					<p style="color:red"><b>Warnings and recommendations</b></p>
 					
 					<!-- <p align="left">There are 2 doors unlocked</p> -->
-					
+										<?php  
+$query3=mysql_query("select * from choice where id=4");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "<b>It is not recommended to turn your security OFF</b>";
+}
+						else{
+							echo "ON";
+						}
+						$query3=mysql_query("select * from choice where id=7");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "\n<br/><b> Front door is unlocked</b>";
+}
+				
+				
+						
+			$query3=mysql_query("select * from choice where id=8");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "\n<br/> <b>Back door is unlocked</b>";
+}
+						?>
 
 
 				  </div>

@@ -9,6 +9,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
   margin-bottom: 20px;
   margin-left: -15px;
   margin-top:-20px;
+  width: 200px;
+  height: 500px;
 }
 .nav-sidebar > li > a {
 	color:#fff;
@@ -41,6 +43,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 	margin-right: -15px;
   margin-bottom: 20px;
   margin-left: -15px;
+  width: 200px;
 }
 .nav-sidebarTwo>li{
 	float: left;
@@ -50,7 +53,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 	font-style: italic;
 	font-weight: bold;
   padding-right: 20px;
-  padding-left: 60px;
+ 
   text-align: center;
 }
 
