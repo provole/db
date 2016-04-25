@@ -297,6 +297,14 @@ if($query4['choice']=="off")
 {
 echo "checked";
 }
+else{
+	$query3=mysql_query("select * from choice where id=12");
+		$query4=mysql_fetch_array($query3);
+		if($query4['choice']=="off"){
+			echo "checked";
+		}
+
+}
 ?> />
 
 
@@ -320,6 +328,14 @@ if($query4['choice']=="off")
 {
 echo "checked";
 }
+else{
+	$query3=mysql_query("select * from choice where id=12");
+		$query4=mysql_fetch_array($query3);
+		if($query4['choice']=="off"){
+			echo "checked";
+		}
+
+}
 ?> />
 
 
@@ -342,6 +358,14 @@ $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
 echo "checked";
+}
+else{
+	$query3=mysql_query("select * from choice where id=12");
+		$query4=mysql_fetch_array($query3);
+		if($query4['choice']=="off"){
+			echo "checked";
+		}
+
 }
 ?> />
 
@@ -368,6 +392,14 @@ $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
 echo "checked";
+}
+else{
+	$query3=mysql_query("select * from choice where id=12");
+		$query4=mysql_fetch_array($query3);
+		if($query4['choice']=="off"){
+			echo "checked";
+		}
+
 }
 ?> />
 
@@ -397,6 +429,10 @@ if($query4['choice']=="off")
 {
 echo "checked";
 }
+else{
+echo "turning down heat";	
+}
+
 ?> />
 
 
