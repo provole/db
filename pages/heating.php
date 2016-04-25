@@ -185,8 +185,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
                 
                 <h3 style="text-align:center">
                          <span style="float:left">Currently</span>
-                         21°
-                        </p>
+                        
+
+<?php  
+$query3=mysql_query("select * from choice where id=13");
+
+$row = mysql_fetch_array($query3);
+  echo $row['choice'];
+
+ 
+?>
+
 
    
           
