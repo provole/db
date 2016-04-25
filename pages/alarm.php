@@ -178,7 +178,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 
                                   <div class="col-md-4">            
               <div class="thumbnail">
-                <div class="caption">
+                <div class="caption" id="depends">
                   <!-- DISPLAYS STATUS IF ANYTHING IS UNLOCKED-->
                 <h3 class="left"><img src="../source_files/location.png" height="30" />Whole House</h3>
           <hr align="left" width="80%"/>
@@ -189,10 +189,11 @@ $query3=mysql_query("select * from choice where id=4");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
-echo "OFF";
+echo "<style>#depends{background:#ff5252;color:#fff;}</style>OFF";
+
 }
             else{
-              echo "ON";
+              echo "<style>#depends{background:#5CFF33;color:#fff;}</style>ON";
             }
  
 ?>

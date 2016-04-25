@@ -1,0 +1,185 @@
+.frontdoor {
+
+position: relative; width: 130px;
+-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.frontdoor-checkbox {
+display: none;
+}
+
+.frontdoor-checkbox:checked {
+margin-left: 0;
+}
+.frontdoor-checkbox:checked {
+right: 0px;
+}
+
+.backdoor {
+
+position: relative; width: 130px;
+-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.backdoor-checkbox {
+display: none;
+}
+
+.backdoor-checkbox:checked{
+margin-left: 0;
+}
+.backdoor-checkbox:checked {
+right: 0px;
+}
+
+
+.backdoor-checkbox:checked + .button-label .button-inner {
+margin-left: 0;
+}
+.backdoor-checkbox:checked + .button-label .button-switch {
+right: 0px;
+}
+
+.bedroom {
+
+position: relative; width: 90px;
+-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.bedroom-checkbox {
+display: none;
+}
+
+.bedroom-checkbox:checked{
+margin-left: 0;
+}
+.bedroom-checkbox:checked {
+right: 0px;
+}
+
+
+.bedroom-checkbox:checked + .button-label .button-inner {
+margin-left: 0;
+}
+.bedroom-checkbox:checked + .button-label .button-switch {
+right: 0px;
+}
+
+
+.outdoor {
+
+position: relative; width: 90px;
+-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.outdoor-checkbox {
+display: none;
+}
+
+.outdoor-checkbox:checked{
+margin-left: 0;
+}
+.outdoor-checkbox:checked {
+right: 0px;
+}
+
+
+.outdoor-checkbox:checked + .button-label .button-inner {
+margin-left: 0;
+}
+.outdoor-checkbox:checked + .button-label .button-switch {
+right: 0px;
+}
+
+.livingroom {
+
+position: relative; width: 90px;
+-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.livingroom-checkbox {
+display: none;
+}
+
+.livingroom-checkbox:checked{
+margin-left: 0;
+}
+.livingroom-checkbox:checked {
+right: 0px;
+}
+
+
+.livingroom-checkbox:checked + .button-label .button-inner {
+margin-left: 0;
+}
+.livingroom-checkbox:checked + .button-label .button-switch {
+right: 0px;
+}
+
+.kopche {
+
+position: relative; width: 90px;
+-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.kopche-checkbox {
+display: none;
+}
+
+.kopche-checkbox:checked{
+margin-left: 0;
+}
+.kopche-checkbox:checked {
+right: 0px;
+}
+
+
+.kopche-checkbox:checked + .button-label .button-inner {
+margin-left: 0;
+}
+.kopche-checkbox:checked + .button-label .button-switch {
+right: 0px;
+}
+
+
+
+
+
+
+
+
+
+.button-label {
+display: block; overflow: hidden; cursor: pointer;
+border: 2px solid #999999; border-radius: 20px;
+}
+.button-inner {
+width: 200%; margin-left: -100%;
+-moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+-o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.button-inner:before, .button-inner:after {
+float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.button-inner:before {
+content: "OFF";
+padding-left: 10px;
+background-color: #2FCCFF; color: #FFFFFF;
+}
+.button-inner:after {
+content: "ON";
+padding-right: 10px;
+background-color: #EEEEEE; color: #999999;
+text-align: right;
+}
+.button-switch {
+width: 18px; margin: 6px;
+background: #FFFFFF;
+border: 2px solid #999999; border-radius: 20px;
+position: absolute; top: 0; bottom: 0; right: 56px;
+-moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+-o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+}
+.frontdoor-checkbox:checked + .button-label .button-inner {
+margin-left: 0;
+}
+.frontdoor-checkbox:checked + .button-label .button-switch {
+right: 0px;
+}
+

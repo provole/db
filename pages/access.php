@@ -16,6 +16,7 @@ mysql_select_db("freeze",$query);
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/nav.css">
         <link rel="stylesheet" type="text/css" href="../css/sidenav.css">
+        <link rel="stylesheet" type="text/css" href="../css/button.css">
         <!--[if lt IE 9]>
           <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -198,9 +199,9 @@ echo "checked";
 
   
   
-<label class="frontdoor-label" for="myfrontdoor">
-<div class="frontdoor-inner"></div>
-<div class="frontdoor-switch"></div>
+<label class="button-label" for="myfrontdoor">
+<div class="button-inner"></div>
+<div class="button-switch"></div>
 </label>
 </div>
 
@@ -224,9 +225,9 @@ echo "checked";
 
   
   
-<label class="backdoor-label" for="mybackdoor">
-<div class="backdoor-inner"></div>
-<div class="backdoor-switch"></div>
+<label class="button-label" for="mybackdoor">
+<div class="button-inner"></div>
+<div class="button-switch"></div>
 </label>
 </div>
             

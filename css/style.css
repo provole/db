@@ -73,102 +73,6 @@ right: 0px;
 
 
 
-.kopche {
-position: relative; width: 90px;t
--webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-}
-.kopche-checkbox {
-display: none;
-}
-.kopche-label {
-display: block; overflow: hidden; cursor: pointer;
-border: 2px solid #999999; border-radius: 20px;
-}
-.kopche-inner {
-width: 200%; margin-left: -100%;
--moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
--o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
-}
-.kopche-inner:before, .kopche-inner:after {
-float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
-font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
--moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
-.kopche-inner:before {
-content: "OFF";
-padding-left: 10px;
-background-color: #2FCCFF; color: #FFFFFF;
-}
-.kopche-inner:after {
-content: "ON";
-padding-right: 10px;
-background-color: #EEEEEE; color: #999999;
-text-align: right;
-}
-.kopche-switch {
-width: 18px; margin: 6px;
-background: #FFFFFF;
-border: 2px solid #999999; border-radius: 20px;
-position: absolute; top: 0; bottom: 0; right: 56px;
--moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
--o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
-}
-.kopche-checkbox:checked + .kopche-label .kopche-inner {
-margin-left: 0;
-}
-.kopche-checkbox:checked + .kopche-label .kopche-switch {
-right: 0px;
-}
-
-
-
-.livingroom {
-
-position: relative; width: 90px;
--webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-}
-.livingroom-checkbox {
-display: none;
-}
-.livingroom-label {
-display: block; overflow: hidden; cursor: pointer;
-border: 2px solid #999999; border-radius: 20px;
-}
-.livingroom-inner {
-width: 200%; margin-left: -100%;
--moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
--o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
-}
-.livingroom-inner:before, .livingroom-inner:after {
-float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
-font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
--moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
-.livingroom-inner:before {
-content: "OFF";
-padding-left: 10px;
-background-color: #2FCCFF; color: #FFFFFF;
-}
-.livingroom-inner:after {
-content: "ON";
-padding-right: 10px;
-background-color: #EEEEEE; color: #999999;
-text-align: right;
-}
-.livingroom-switch {
-width: 18px; margin: 6px;
-background: #FFFFFF;
-border: 2px solid #999999; border-radius: 20px;
-position: absolute; top: 0; bottom: 0; right: 56px;
--moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
--o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
-}
-.livingroom-checkbox:checked + .livingroom-label .livingroom-inner {
-margin-left: 0;
-}
-.livingroom-checkbox:checked + .livingroom-label .livingroom-switch {
-right: 0px;
-}
 
 
 
@@ -424,4 +328,63 @@ box-shadow: 7px 6px 14px -8px rgba(0,0,0,0.75);
 #time{
   color:#fff;
   font-size:16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.button {
+
+position: relative; width: 90px;
+-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.button-checkbox {
+display: none;
+}
+.button-label {
+display: block; overflow: hidden; cursor: pointer;
+border: 2px solid #999999; border-radius: 20px;
+}
+.button-inner {
+width: 200%; margin-left: -100%;
+-moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+-o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.button-inner:before, .button-inner:after {
+float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.button-inner:before {
+content: "OFF";
+padding-left: 10px;
+background-color: #2FCCFF; color: #FFFFFF;
+}
+.button-inner:after {
+content: "ON";
+padding-right: 10px;
+background-color: #EEEEEE; color: #999999;
+text-align: right;
+}
+.button-switch {
+width: 18px; margin: 6px;
+background: #FFFFFF;
+border: 2px solid #999999; border-radius: 20px;
+position: absolute; top: 0; bottom: 0; right: 56px;
+-moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+-o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+}
+.button-checkbox:checked + .button-label .button-inner {
+margin-left: 0;
+}
+.button-checkbox:checked + .button-label .button-switch {
+right: 0px;
 }

@@ -190,6 +190,7 @@ if($query4['choice']=="off")
 echo "OFF";
 }
 						else{
+             
 							echo "ON";
 						}
 						
