@@ -308,6 +308,8 @@ else{
 		$query4=mysql_fetch_array($query3);
 		if($query4['choice']=="off"){
 			echo "checked";
+			
+
 		}
 
 }
@@ -473,8 +475,8 @@ else{
                   <div class="col-md-6">            
                     <div class="thumbnail">
                       <div class="caption">
-                        <h3 class="left">Lighting</h3>
-					  <P align="left">Home	<div class="away">
+                        <h3 class="left">Home / Work Mode</h3>
+					  <P align="left">Whole house • Heating	• Lighting<div class="away">
 <input type="checkbox" name="away" class="away-checkbox" id="myaway"
 <?php  
 $query3=mysql_query("select * from choice where id=12");
