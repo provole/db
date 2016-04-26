@@ -161,11 +161,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
             	<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><a href="../index.php"><i class="glyphicon glyphicon-chevron-left"></i></a></button>
 			</p>
           
-		  <h1 class="page-header">
+		   <h3 class="page-header">
             Lighting
            
-          </h1>
-
+          </h3>
+          <i>This is the lights control page. You can manually switch on/off the following 4 lights.: Kitchen, Living Room, Bedroom and Outdoor. If you would like to activate Work mode, please 
+          head over to the status page. On activation of this mode, all lights will be switched off to save energy. </i>
+          <hr width="80%";
           <div class="row placeholders">
   
        

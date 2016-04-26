@@ -162,10 +162,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
             	<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><a href="../index.php"><i class="glyphicon glyphicon-chevron-left"></i></a></button>
 			</p>
           
-		  <h1 class="page-header">
+		 <h3 class="page-header">
             Heating
            
-          </h1>
+          </h3>
+          <i>This is the heating page. You can set a temperature to the house as well as see a 24 hour graph of recommended temperature during the day.</i>
+          <hr width="80%";
 
           <div class="row placeholders">
   
@@ -243,59 +245,7 @@ var myLineChart = new Chart(ctx).Line(data, options);
                 </div>
               </div>
             
-               <div class="col-md-8">            
-              <div class="thumbnail">
-                <div class="caption">
-                  <!-- DISPLAYS STATUS IF ANYTHING IS UNLOCKED-->
-                <h3 class="left">Status</h3>
-          <hr align="left" width="80%"/>
-          <img src="../source_files/security.png" class="security" width="70" height="70">
-          <p align="center">Security is 
-          <?php  
-$query3=mysql_query("select * from choice where id=4");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "OFF";
-}
-            else{
-              echo "ON";
-            }
- 
-?>
-          </p>
-          <div class="security">
-<input type="checkbox" name="security" class="security-checkbox" id="mysecurity"
-<?php  
-$query3=mysql_query("select * from choice where id=4");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "checked";
-}
-?> />
 
-
-
-  
-  
-<label class="security-label" for="mysecurity">
-<div class="security-inner"></div>
-<div class="security-switch"></div>
-</label>
-</div>
-          
-          
-          <br><hr align="left" width="80%"/>
-          
-          <!-- <p align="left">There are 2 doors unlocked</p> -->
-          
-
-
-          </div>
-                  
-                </div>
-              </div>
             
                     </div>
                    

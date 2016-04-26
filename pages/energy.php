@@ -161,10 +161,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
             	<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><a href="../index.php"><i class="glyphicon glyphicon-chevron-left"></i></a></button>
 			</p>
           
-		  <h1 class="page-header">
-           Energy
+		   <h3 class="page-header">
+            Energy
            
-          </h1>
+          </h3>
+          <i>In this page you are able to see a bar chart showing you how much energy you have produced for the past 10 months using your solar panels.
+          It is important to know how much Co2 you have reduced as well as keep track of how much money you have saved. </i>
+          <hr width="80%";
 
           <div class="row placeholders">
   

@@ -161,10 +161,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
             	<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><a href="../index.php"><i class="glyphicon glyphicon-chevron-left"></i></a></button>
 			</p>
           
-		  <h1 class="page-header">
+		   <h3 class="page-header">
             Access
            
-          </h1>
+          </h3>
+          <i>Welcome to the access page. You are able to lock and unlock the front and black door of the house. Regardless of the alarm being actived, it is recommended that doors are being locked at all times. </i> 
+          <hr width="80%";
 
           <div class="row placeholders">
   

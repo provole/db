@@ -160,11 +160,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
             	<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><a href="../index.php"><i class="glyphicon glyphicon-chevron-left"></i></a></button>
 			</p>
           
-		  <h1 class="page-header">
+		  <h3 class="page-header">
             Monitoring
            
-          </h1>
-
+          </h3>
+          <i>Be notified on when are your next appointments for maintenance.</i>
+          <hr width="80%";
           <div class="row placeholders">
   
        
