@@ -86,7 +86,7 @@ mysql_select_db("freeze",$query);
           <div class="row">
             <div class="col-md-4">            
               <div class="thumbnail">
-                <div class="caption">
+                <div class="caption" id="depends">
                   <!-- DISPLAYS STATUS IF ANYTHING IS UNLOCKED-->
              		<h3 class="left">Status</h3>
 					<hr align="left" width="80%"/>
@@ -97,11 +97,11 @@ $query3=mysql_query("select * from choice where id=4");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
-echo "OFF";
+echo "<style>#depends{background:#ff5252;color:#fff;}</style>OFF";
 
 }
 						else{
-							echo "ON";
+							 echo "<style>#depends{background:#5CFF33;color:#fff;}</style>ON";
 						}
 						
 	
