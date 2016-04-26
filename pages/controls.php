@@ -145,16 +145,18 @@ echo "\n<br/> <b>Back door is unlocked</b>";
              
                    <h3 class="left">Locks</h3>
                    <hr align="left" width="80%"/>
-					<img class="security" src="../source_files/Graphicloads-Colorful-Long-Shadow-Lock%20(1).ico" width="40" height="40" align="left"> <p>Front door is <?php  
+					 <p>Front door is <?php  
 $query3=mysql_query("select * from choice where id=7");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
 echo "<b>unlocked</b>";
+echo "<img class='security' src='../source_files/unlock.ico' width='40' height='40' align='left'>";
 
 }
             else{
               echo "<b>locked</b>";
+              echo "<img class='security' src='../source_files/lock.ico' width='40' height='40' align='left'>";
             }
  
 ?></p>
@@ -182,17 +184,20 @@ echo "checked";
 
 					  
 					  <hr align="left" width="80%"/>
-					  <img class="security" src="../source_files/Graphicloads-100-Flat-Unlock.ico" width="40" height="40" align="left">
+					 
 						   <p>Back door is <?php  
 $query3=mysql_query("select * from choice where id=7");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
 echo "<b>unlocked</b>";
+echo "<img class='security' src='../source_files/unlock.ico' width='40' height='40' align='left'>";
 
 }
             else{
               echo "<b>locked</b>";
+              echo "<img class='security' src='../source_files/lock.ico' width='40' height='40' align='left'>";
+
             }
  
 ?></p>
@@ -228,7 +233,7 @@ echo "checked";
 		<div class="col-md-4">            
                   <div class="thumbnail">
                     <div class="caption">
-                     <h3 class="left">Heating</h3>
+                     <h3 class="left">Temperature</h3>
                       	 <hr align="left" width="80%"/>
 							
 						<?php  

@@ -17,9 +17,7 @@ background: linear-gradient(230deg, rgba(142,184,247,1) 24%, rgba(30,57,115,1) 1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', endColorstr='#8eb8f7',GradientType=1 );  
 }
 
-.glyphicon{
-	color: #fff;
-}
+
 .footer{
 	margin-top: 300px;
 }

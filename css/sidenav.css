@@ -35,7 +35,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 .glyphicon{
 	color: #Fff;
 }
-
+.visible-xs{
+	display:none;
+}
 
 
 .nav-sidebarTwo{

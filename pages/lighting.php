@@ -283,6 +283,26 @@ else{
 <div class="button-switch"></div>
 </label>
 </div>
+           
+
+
+                    </div>
+                   
+                  </div>
+                </div>
+                <div class="col-md-4">            
+                <div class="thumbnail">
+                  <div class="caption">
+             
+                   <h3 class="left">Lighting</h3>
+  
+
+
+        
+  
+          
+            
+ 
             <hr align="left" width="80%"/>
            
                <p align="left">Bedroom light is 
@@ -379,6 +399,8 @@ else{
 <div class="button-switch"></div>
 </label>
 </div>
+
+
                     </div>
                    
                   </div>
