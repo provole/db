@@ -127,6 +127,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 
 .main .page-header {
   margin-top: -50px;
+  border-bottom: none;
 }
 
 

@@ -132,9 +132,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
             	<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
 			</p>
           
-		  <h1 class="page-header">
+		  <h3 class="page-header">
             Bedroom
-          </h1>
+           
+          </h3>
+          <i>Welcome to the bedroom. To turn off/on lights use the switch. To open blinds click turn. If you wish to set a timer to set lights on/off input the amount in the text field. </i>
+          <hr width="80%";
 
           <div class="row placeholders">
   
@@ -152,7 +155,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
                   <!-- DISPLAYS STATUS IF ANYTHING IS UNLOCKED-->
 										
              					 <hr align="left" width="80%"/>
-					<img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Bedroom light is
+					 <p>Bedroom light is
 					  
 					  <?php  
 $query3=mysql_query("select * from choice where id=5");
@@ -160,9 +163,11 @@ $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
 echo 'OFF <input type="hidden" id="lightOppositeValue" value="on">';
+echo "<img class='security' src='../source_files/lightoff.png' width='40' height='40' align='left'>";
 }
 						else{
 							echo 'ON <input type="hidden" id="lightOppositeValue" value="off">';
+              echo "<img class='security' src='../source_files/lighton.png' width='40' height='40' align='left'>";
 						}
 ?>
 					 

@@ -160,11 +160,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
             	<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
 			</p>
           
-		  <h1 class="page-header">
+		  <h3 class="page-header">
             Lounge
            
-          </h1>
-
+          </h3>
+          <i>Welcome to the lounge. To turn off/on lights use the switch. To open blinds click turn. </i>
+          <hr width="80%";
           <div class="row placeholders">
   
        
@@ -181,7 +182,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
                   <!-- DISPLAYS STATUS IF ANYTHING IS UNLOCKED-->
 										
              					 <hr align="left" width="80%"/>
-					<img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Lounge light is
+					<p>Lounge light is
 					  
 					  <?php  
 $query3=mysql_query("select * from choice where id=10");
@@ -189,9 +190,11 @@ $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
 echo "OFF";
+echo "<img class='security' src='../source_files/lightoff.png' width='40' height='40' align='left'>";
 }
 						else{
 							echo "ON";
+              echo "<img class='security' src='../source_files/lighton.png' width='40' height='40' align='left'>";
 						}
 ?>
 					  
@@ -264,7 +267,7 @@ echo "checked";
 
 </select>
  
-<button id="button" class="ui-state-default ui-corner-all">Switch</button>
+<button id="button" class="ui-state-default ui-corner-all">Turn</button>
           
 								</div><!--/row-->
 								</div>

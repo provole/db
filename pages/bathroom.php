@@ -160,11 +160,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
             	<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
 			</p>
           
-		  <h1 class="page-header">
+		  <h3 class="page-header">
             Bathroom
            
-          </h1>
-
+          </h3>
+          <i>Welcome to the bathroom. To turn off/on lights use the switch. To open blinds click turn </i>
+          <hr width="80%";
           <div class="row placeholders">
   
        
@@ -181,7 +182,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
                   <!-- DISPLAYS STATUS IF ANYTHING IS UNLOCKED-->
 										
              					 <hr align="left" width="80%"/>
-					<img class="security" src="../source_files/lightoff.png" width="40" height="40" align="left"> <p>Bathroom light is
+					<p>Bathroom light is
 					  
 					  <?php  
 $query3=mysql_query("select * from choice where id=9");
@@ -189,9 +190,11 @@ $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
 echo "OFF";
+echo "<img class='security' src='../source_files/lightoff.png' width='40' height='40' align='left'>";
 }
 						else{
 							echo "ON";
+              echo "<img class='security' src='../source_files/lighton.png' width='40' height='40' align='left'>";
 						}
 ?>
 					  
@@ -219,52 +222,7 @@ echo "checked";
 <div class="bathroom-switch"></div>
 </label>
 </div>
-	  <style>
-  .toggler {
-    width: 500px;
-    height: 200px;
-  }
-  #button {
-    padding: .5em 1em;
-    text-decoration: none;
-  }
-  #effect {
-    position: relative;
-    width: 240px;
-    height: 135px;
-    padding: 0.4em;
-  }
-  #effect h3 {
-    margin: 0;
-    padding: 0.4em;
-    text-align: center;
-  }
-  </style>
-										
-
-										
-										
-										
-										
-										
-										
-										
-										
-										
-    <h3>Blinds</h3>										
-<div class="toggler">
-  <div id="effect" class="ui-widget-content ui-corner-all">
-
-   <img src="../source_files/blinds.png"  height="150" width="150"/>
-  </div>
-</div>
- 
-<select name="effects" id="effectTypes">
-  <option value="blind">Blind</option>
-
-</select>
- 
-<button id="button" class="ui-state-default ui-corner-all">Switch</button>
+	  
           
 								</div><!--/row-->
 								</div>
@@ -285,34 +243,7 @@ echo "checked";
 										
 										
 										
-										
 
-																				 <script>
-  $(function() {
-    // run the currently selected effect
-    function runEffect() {
-      // get effect type from
-      var selectedEffect = $( "#effectTypes" ).val();
- 
-      // most effect types need no options passed by default
-      var options = {};
-      // some effects have required parameters
-      if ( selectedEffect === "scale" ) {
-        options = { percent: 0 };
-      } else if ( selectedEffect === "size" ) {
-        options = { to: { width: 200, height: 60 } };
-      }
- 
-      // run the effect
-      $( "#effect" ).toggle( selectedEffect, options, 500 );
-    };
- 
-    // set effect from select menu value
-    $( "#button" ).click(function() {
-      runEffect();
-    });
-  });
-  </script>
           
 						</div>
 		  </div>    
