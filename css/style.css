@@ -157,7 +157,7 @@ border: 1px solid white;
 #circle{
 	border-radius: 350%;
 }
-#portfolio {
+#dashboard {
 
 	background: url(../navBar/mac.jpg)no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -182,12 +182,12 @@ border: 1px solid white;
   text-align: center;
   margin-bottom:50px;
 }
-#portfolio .thumbnail{
+#dashboard .thumbnail{
 -webkit-box-shadow: 7px 6px 14px -8px rgbta(0,0,0,0.75);
 -moz-box-shadow: 7px 6px 14px -8px rgba(0,0,0,0.75);
 box-shadow: 7px 6px 14px -8px rgba(0,0,0,0.75);
 }
-#portfolio h1{
+#dashboard h1{
   position: relative;
   font-size: 38px;
 
@@ -203,7 +203,7 @@ box-shadow: 7px 6px 14px -8px rgba(0,0,0,0.75);
 }
 
 
-#portfolio{
+#dashboard{
 	margin-top: 50px;
 }
 .project h4 {

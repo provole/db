@@ -9,7 +9,7 @@ mysql_select_db("freeze",$query);
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
         <meta charset="utf-8">
-        <title>Dashboard</title>
+        <title>Lounge | Smart Home</title>
         <meta name="generator" content="Bootply" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="Example of the Bootstrap dashboard teplate with a  collapsible offcanvas sidebar. The left sidebar collaspes on smaller screens and can be toggled." />
@@ -110,7 +110,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
      </a>
-    <a class="navbar-brand" href="#">Project name</a>
+   
    </div>
    <div id="slidemenu">
      
@@ -150,7 +150,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
                 <li class="active"><a href="#"><img src="../source_files/lounge.png" height="25" width="30" /> Lounge</a></li>
                  <li><a href="bathroom.php"><img src="../source_files/bathroom.png" height="25" width="30" /> Bathroom</a></li>
                 <li><a href="garage.php"><img src="../source_files/garage.png" height="25" width="30" /> Garage</a></li>
-                 <li><a href="house.php"><img src="../source_files/house.png" height="25" width="30" /> House</a></li>
+             
                 <li><a href="bedroom.php"><img src="../source_files/bedroom.png" height="25" width="30" /> Bedroom</a></li> 
             </ul>
 		</div><!--/span-->
@@ -169,7 +169,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
   
        
 
-          	<section id="portfolio" class="portfolio">
+          	<section id="dashboard" class="dashboard">
     			<div class="container">
       				<div class="row">
         				<div class="col-lg-10 col-lg-offset-1 text-center">

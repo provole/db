@@ -9,7 +9,7 @@ mysql_select_db("freeze",$query);
 		<meta charset="utf-8">
 			<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Smart Home</title>
+<title>Smart Home | Status</title>
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="../css/style.css"/>
 <link rel="stylesheet" type="text/css" href="../css/nav.css"/>

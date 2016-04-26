@@ -9,7 +9,7 @@ mysql_select_db("freeze",$query);
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
         <meta charset="utf-8">
-        <title>Dashboard</title>
+        <title>Room | Smart Home</title>
         <meta name="generator" content="Bootply" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="Example of the Bootstrap dashboard teplate with a  collapsible offcanvas sidebar. The left sidebar collaspes on smaller screens and can be toggled." />
@@ -106,7 +106,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
      </a>
-    <a class="navbar-brand" href="#">Project name</a>
+
    </div>
    <div id="slidemenu">
      
@@ -159,69 +159,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
             	<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><a href="../index.php"><i class="glyphicon glyphicon-chevron-left"></i></a></button>
 			</p>
           
-		  <h1 class="page-header">
-            Dashboard
+		  <h3 class="page-header">
+            Room
            
-          </h1>
+          </h3> <i>Choose a room you would like to control.</i>
 
           <div class="row placeholders">
   
        
 
-          	<section id="portfolio" class="portfolio">
+          	<section id="dashboard" class="dashboard">
     			<div class="container">
       				<div class="row">
         				<div class="col-lg-10 col-lg-offset-1 text-center">
 
-          					<div class="row">
-            					<div class="col-md-4">            
-              						<div class="thumbnail">
-                					<div class="caption">
-                  <!-- DISPLAYS STATUS IF ANYTHING IS UNLOCKED-->
-             						<h3 class="left">Status</h3>
-									<hr align="left" width="80%"/>
-									<img src="../source_files/security.png" class="security" width="70" height="70">
-									<p align="center">Security is 
-					<?php  
-$query3=mysql_query("select * from choice where id=4");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "OFF";
-}
-						else{
-             
-							echo "ON";
-						}
-						
-						?>
-<div class="security">
-<input type="checkbox" name="security" class="security-checkbox" id="mysecurity"
-<?php  
-$query3=mysql_query("select * from choice where id=4");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "checked";
-}
-?> />
-
-      <?php
-      $query3=mysql_query("select * from choice where id=8");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "\n<br/> Back door is unlocked";
-}
-      
-?>
-
-</div>
-          
-								</div><!--/row-->
-								</div>
-								</div><!--/.container-->
-						</div>
+  
 		  </div>    
 			</div>
 		</div>

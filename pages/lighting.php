@@ -9,7 +9,7 @@ mysql_select_db("freeze",$query);
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
         <meta charset="utf-8">
-        <title>Access | Smart Home</title>
+        <title>Lighting | Smart Home</title>
         <meta name="generator" content="Bootply" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="Example of the Bootstrap dashboard teplate with a  collapsible offcanvas sidebar. The left sidebar collaspes on smaller screens and can be toggled." />
@@ -147,8 +147,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 		           
 				     
               	<li><a href="heating.php"><img src="../source_files/heating.png" height="25" width="30" /> Heating</a></li>
-                <li><a href="lighting.php"><img src="../source_files/lights.png" height="25" width="30" /> Lighting</a></li>
-                 <li class="active"><a href="access.php"><img src="../source_files/bathroom.png" height="25" width="30" /> Access</a></li>
+                <li class="active"><a href="lighting.php"><img src="../source_files/lights.png" height="25" width="30" /> Lighting</a></li>
+                 <li><a href="access.php"><img src="../source_files/bathroom.png" height="25" width="30" /> Access</a></li>
                 <li><a href="alarm.php"><img src="../source_files/alarm.png" height="25" width="30" /> Alarm</a></li>
                  <li><a href="energy.php"><img src="../source_files/energ.png" height="25" width="30" /> Energy</a></li>
                 <li><a href="monitoring.php"><img src="../source_files/monitoring.png" height="25" width="30" /> Monitoring</a></li> 
@@ -162,7 +162,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 			</p>
           
 		  <h1 class="page-header">
-            Access
+            Lighting
            
           </h1>
 
@@ -172,44 +172,57 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 
           	<section id="dashboard" class="dashboard">
     			<div class="container">
-      				<div class="row">
-        				<div class="col-lg-10 col-lg-offset-1 text-center">
+      				           <div class="row">
 
-          					<div class="row">
-            					 <div class="col-md-4">            
+                
+
+                  <div class="col-md-4">            
                 <div class="thumbnail">
                   <div class="caption">
              
-                   <h3 class="left">Locks</h3>
+                   <h3 class="left">Lighting</h3>
+  
+
+
                    <hr align="left" width="80%"/>
-           <p>Front door is 
-          <?php  
-$query3=mysql_query("select * from choice where id=7");
+           <p align="left">Kitchen light is
+            
+            <?php  
+$query3=mysql_query("select * from choice where id=2");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
-echo "<b>unlocked</b>";
-echo "<img class='security' src='../source_files/unlock.ico' width='40' height='40' align='left'>";
-
+echo "OFF";
+echo "<img src='../source_files/lightoff.png' height='40' width='40' align='right'";
 }
             else{
-              echo "<b>locked</b>";
-              echo "<img class='security' src='../source_files/lock.ico' width='40' height='40' align='left'>";
+              echo "ON";
+              echo "<img src='../source_files/lighton.png' height='40' width='40' align='right'";
             }
- 
 ?>
-          </p>
-
-
-
-<div class="frontdoor">
-<input type="checkbox" name="frontdoor" class="frontdoor-checkbox" id="myfrontdoor"
+            
+            
+            
+            
+            
+            </p><div class="kopche">
+<input type="checkbox" name="kopche" class="kopche-checkbox" id="mykopche"
 <?php  
-$query3=mysql_query("select * from choice where id=7");
+$query3=mysql_query("select * from choice where id=2");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
 echo "checked";
+}
+else{
+  $query3=mysql_query("select * from choice where id=12");
+    $query4=mysql_fetch_array($query3);
+    if($query4['choice']=="off"){
+      echo "checked";
+      
+
+    }
+
 }
 ?> />
 
@@ -217,41 +230,47 @@ echo "checked";
 
   
   
-<label class="frontdoor-label" for="myfrontdoor">
-<div class="frontdoor-inner"></div>
-<div class="frontdoor-switch"></div>
+<label class="button-label" for="mykopche">
+<div class="button-inner"></div>
+<div class="button-switch"></div>
 </label>
 </div>
-
-            
+  
             <hr align="left" width="80%"/>
             
-               <p>Back door is 
-<?php  
-$query3=mysql_query("select * from choice where id=8");
+               <p align="left">Living room light is 
+ <?php  
+$query3=mysql_query("select * from choice where id=3");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
-echo "<b>unlocked</b>";
-echo "<img class='security' src='../source_files/unlock.ico' width='40' height='40' align='left'>";
+echo "OFF";
+echo "<img src='../source_files/lightoff.png' height='40' width='40' align='right'";
 
 }
             else{
-              echo "<b>locked</b>";
-              echo "<img class='security' src='../source_files/lock.ico' width='40' height='40' align='left'>";
+              echo "ON";
+
+              echo "<img src='../source_files/lighton.png' height='40' width='40' align='right'";
             }
- 
 ?>
-               </p>
-               
-            <div class="backdoor">
-<input type="checkbox" name="backdoor" class="backdoor-checkbox" id="mybackdoor"
+
+               </p><div class="livingroom">
+<input type="checkbox" name="livingroom" class="livingroom-checkbox" id="mylivingroom"
 <?php  
-$query3=mysql_query("select * from choice where id=8");
+$query3=mysql_query("select * from choice where id=3");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
 echo "checked";
+}
+else{
+  $query3=mysql_query("select * from choice where id=12");
+    $query4=mysql_fetch_array($query3);
+    if($query4['choice']=="off"){
+      echo "checked";
+    }
+
 }
 ?> />
 
@@ -259,21 +278,111 @@ echo "checked";
 
   
   
-<label class="backdoor-label" for="mybackdoor">
-<div class="backdoor-inner"></div>
-<div class="backdoor-switch"></div>
+<label class="button-label" for="mylivingroom">
+<div class="button-inner"></div>
+<div class="button-switch"></div>
 </label>
 </div>
+            <hr align="left" width="80%"/>
+           
+               <p align="left">Bedroom light is 
+                <?php  
+$query3=mysql_query("select * from choice where id=5");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "OFF";
+echo "<img src='../source_files/lightoff.png' height='40' width='40' align='right'";
+
+}
+            else{
+              echo "ON";
+
+              echo "<img src='../source_files/lighton.png' height='40' width='40' align='right'";
+            }
+?></p>
+                                    <div class="bedroom">
+<input type="checkbox" name="bedroom" class="bedroom-checkbox" id="mybedroom"
+<?php  
+$query3=mysql_query("select * from choice where id=5");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "checked";
+}
+else{
+  $query3=mysql_query("select * from choice where id=12");
+    $query4=mysql_fetch_array($query3);
+    if($query4['choice']=="off"){
+      echo "checked";
+    }
+
+}
+?> />
+
+
+
+  
+  
+<label class="button-label" for="mybedroom">
+<div class="button-inner"></div>
+<div class="button-switch"></div>
+</label>
+</div>
+
             
             
             
-            
+            <hr align="left" width="80%"/>
+          <p align="left">Outdoor light is 
+ <?php  
+$query3=mysql_query("select * from choice where id=6");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "OFF";
+echo "<img src='../source_files/lightoff.png' height='40' width='40' align='right'";
+}
+            else{
+              echo "ON";
+
+            echo "<img src='../source_files/lighton.png' height='40' width='40' align='right'";
+            }
+?>
+          </p>
+                        <div class="outdoor">
+<input type="checkbox" name="outdoor" class="outdoor-checkbox" id="myoutdoor"
+<?php  
+$query3=mysql_query("select * from choice where id=6");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "checked";
+
+}
+else{
+  $query3=mysql_query("select * from choice where id=12");
+    $query4=mysql_fetch_array($query3);
+    if($query4['choice']=="off"){
+      echo "checked";
+    }
+
+}
+?> />
+
+
+
+  
+  
+<label class="button-label" for="myoutdoor">
+<div class="button-inner"></div>
+<div class="button-switch"></div>
+</label>
+</div>
                     </div>
                    
                   </div>
                 </div>
-
-						</div>
 		  </div>    
 			</div>
 		</div>
