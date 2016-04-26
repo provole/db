@@ -14,6 +14,7 @@ margin-left: 0;
 right: 0px;
 }
 
+
 .backdoor {
 
 position: relative; width: 130px;
@@ -160,12 +161,12 @@ font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-w
 .button-inner:before {
 content: "OFF";
 padding-left: 10px;
-background-color: #2FCCFF; color: #FFFFFF;
+background-color: #FF3636; color: #FFFFFF;
 }
 .button-inner:after {
 content: "ON";
 padding-right: 10px;
-background-color: #EEEEEE; color: #999999;
+background-color: #FFFF47; color: #333;
 text-align: right;
 }
 .button-switch {
@@ -183,3 +184,53 @@ margin-left: 0;
 right: 0px;
 }
 
+
+
+
+
+.away {
+position: relative; width: 120px;
+-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.away-checkbox {
+display: none;
+}
+.away-label {
+display: block; overflow: hidden; cursor: pointer;
+border: 2px solid #999999; border-radius: 20px;
+}
+.away-inner {
+width: 200%; margin-left: -100%;
+-moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+-o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.away-inner:before, .away-inner:after {
+float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.away-inner:before {
+content: "WORK";
+padding-left: 10px;
+background-color: #2FCCFF; color: #FFFFFF;
+}
+.away-inner:after {
+content: "HOME";
+padding-right: 10px;
+background-color: #EEEEEE; color: #999999;
+text-align: right;
+}
+.away-switch {
+width: 18px; margin: 6px;
+background: #FFFFFF;
+border: 2px solid #999999; border-radius: 20px;
+position: absolute; top: 0; bottom: 0; right: 56px;
+-moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+-o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+}
+.away-checkbox:checked + .away-label .away-inner {
+margin-left: 0;
+}
+.away-checkbox:checked + .away-label .away-switch {
+right: 0px;
+}

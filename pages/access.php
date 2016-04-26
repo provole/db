@@ -182,7 +182,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
              
                    <h3 class="left">Locks</h3>
                    <hr align="left" width="80%"/>
-          <img class="security" src="../source_files/Graphicloads-Colorful-Long-Shadow-Lock%20(1).ico" width="40" height="40" align="left"> <p>Front door is locked</p>
+          <img class="security" src="../source_files/Graphicloads-Colorful-Long-Shadow-Lock%20(1).ico" width="40" height="40" align="left"> <p>Front door is 
+          <?php  
+$query3=mysql_query("select * from choice where id=7");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "<b>unlocked</b>";
+
+}
+            else{
+              echo "<b>locked</b>";
+            }
+ 
+?>
+          </p>
+
+
 
 <div class="frontdoor">
 <input type="checkbox" name="frontdoor" class="frontdoor-checkbox" id="myfrontdoor"
@@ -208,7 +224,21 @@ echo "checked";
             
             <hr align="left" width="80%"/>
             <img class="security" src="../source_files/Graphicloads-100-Flat-Unlock.ico" width="40" height="40" align="left">
-               <p>Back door is unlocked</p>
+               <p>Back door is 
+<?php  
+$query3=mysql_query("select * from choice where id=8");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "<b>unlocked</b>";
+
+}
+            else{
+              echo "<b>locked</b>";
+            }
+ 
+?>
+               </p>
                
             <div class="backdoor">
 <input type="checkbox" name="backdoor" class="backdoor-checkbox" id="mybackdoor"

@@ -108,42 +108,14 @@ echo "<style>#depends{background:#ff5252;color:#fff;}</style>OFF";
 			
 ?>
 					</p>
-					<div class="security">
-<input type="checkbox" name="security" class="security-checkbox" id="mysecurity"
-<?php  
-$query3=mysql_query("select * from choice where id=4");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "checked";
-}
-?> />
-
-
-
-	
-	
-<label class="security-label" for="mysecurity">
-<div class="security-inner"></div>
-<div class="security-switch"></div>
-</label>
-</div>
-					
+		
 					
 					<br><hr align="left" width="80%"/>
 					<p style="color:red"><b>Warnings and recommendations</b></p>
 					
 					<!-- <p align="left">There are 2 doors unlocked</p> -->
 										<?php  
-$query3=mysql_query("select * from choice where id=4");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "<b>It is not recommended to turn your security OFF</b>";
-}
-						else{
-							echo "ON";
-						}
+
 						$query3=mysql_query("select * from choice where id=7");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
@@ -173,7 +145,19 @@ echo "\n<br/> <b>Back door is unlocked</b>";
              
                    <h3 class="left">Locks</h3>
                    <hr align="left" width="80%"/>
-					<img class="security" src="../source_files/Graphicloads-Colorful-Long-Shadow-Lock%20(1).ico" width="40" height="40" align="left"> <p>Front door is locked</p>
+					<img class="security" src="../source_files/Graphicloads-Colorful-Long-Shadow-Lock%20(1).ico" width="40" height="40" align="left"> <p>Front door is <?php  
+$query3=mysql_query("select * from choice where id=7");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "<b>unlocked</b>";
+
+}
+            else{
+              echo "<b>locked</b>";
+            }
+ 
+?></p>
 
 <div class="frontdoor">
 <input type="checkbox" name="frontdoor" class="frontdoor-checkbox" id="myfrontdoor"
@@ -199,7 +183,19 @@ echo "checked";
 					  
 					  <hr align="left" width="80%"/>
 					  <img class="security" src="../source_files/Graphicloads-100-Flat-Unlock.ico" width="40" height="40" align="left">
-						   <p>Back door is unlocked</p>
+						   <p>Back door is <?php  
+$query3=mysql_query("select * from choice where id=7");
+$query4=mysql_fetch_array($query3);
+if($query4['choice']=="off")
+{
+echo "<b>unlocked</b>";
+
+}
+            else{
+              echo "<b>locked</b>";
+            }
+ 
+?></p>
 						   
 					  <div class="backdoor">
 <input type="checkbox" name="backdoor" class="backdoor-checkbox" id="mybackdoor"
@@ -234,8 +230,15 @@ echo "checked";
                     <div class="caption">
                      <h3 class="left">Heating</h3>
                       	 <hr align="left" width="80%"/>
-							<h1>21°</h1>
 							
+						<?php  
+$query3=mysql_query("select * from choice where id=13");
+
+$row = mysql_fetch_array($query3);
+  echo '<h1>'.$row['choice'].'°'.'</h1>';
+
+ 
+?>	
 						
                       </div>
                    
@@ -251,26 +254,7 @@ echo "checked";
                   <div class="caption">
              
                    <h3 class="left">Lighting</h3>
-					  <P align="left">Master Switch	<div class="onoffswitch">
-<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch"
-<?php  
-$query3=mysql_query("select * from choice where id=1");
-$query4=mysql_fetch_array($query3);
-if($query4['choice']=="off")
-{
-echo "checked";
-}
-?> />
-
-
-
 	
-	
-<label class="onoffswitch-label" for="myonoffswitch">
-<div class="onoffswitch-inner"></div>
-<div class="onoffswitch-switch"></div>
-</label>
-</div></P>
 
 
                    <hr align="left" width="80%"/>
@@ -475,8 +459,11 @@ else{
                   <div class="col-md-6">            
                     <div class="thumbnail">
                       <div class="caption">
-                        <h3 class="left">Home / Work Mode</h3>
-					  <P align="left">Whole house • Heating	• Lighting<div class="away">
+                      <p align="right">
+                       <span style="float:left; font-weight: bold; font-size:15px" ="left">Home/Work MODE</span>
+                       Whole house • Lighting</p>
+					  <i>By switching to work mode, all house lighting will be switched off to save energy.</i>
+					  <div class="away">
 <input type="checkbox" name="away" class="away-checkbox" id="myaway"
 <?php  
 $query3=mysql_query("select * from choice where id=12");
