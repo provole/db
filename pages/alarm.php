@@ -16,6 +16,7 @@ mysql_select_db("freeze",$query);
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/nav.css">
         <link rel="stylesheet" type="text/css" href="../css/sidenav.css">
+        <link rel="stylesheet" type="text/css" href="../css/button.css">
         <!--[if lt IE 9]>
           <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -112,9 +113,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
      
     
     <ul class="nav navbar-nav">
-    <a href="../index.php"><li class="active"><img src="../source_files/homeicon.png" height="30" alt="home"/></li></a> 
-     <a href="controller.php"><li class="active"><img src="../source_files/offbtnn.png" height="30" alt="controls"/></li></a> 
-     <a href="controls.php"><li class="active"><img src="../source_files/eye.png" height="30" alt="controls"/></li></a> 
+    <a href="../index.php"><li class="active"><img src="../source_files/homeicon.png" height="30" alt="home" class="nonhid"/></li><li class="hid">Home</li></a> 
+     <a href="controller.php"><li><img src="../source_files/offbtnn.png" height="30" alt="controls" class="nonhid"/></li><li class="hid">Controls</li></a> 
+     <a href="controls.php"><li class="active"><img src="../source_files/eye.png" height="30" alt="controls" class="nonhid"/></li><li class="hid">Status</li></a>  
     
     
     </ul>
@@ -200,7 +201,7 @@ echo "<style>#depends{background:#ff5252;color:#fff;}</style>OFF";
  
 ?>
           </p>
-          <div class="security">
+          <div class="secure">
 <input type="checkbox" name="security" class="security-checkbox" id="mysecurity"
 <?php  
 $query3=mysql_query("select * from choice where id=4");

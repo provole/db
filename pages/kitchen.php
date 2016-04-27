@@ -16,6 +16,7 @@ mysql_select_db("freeze",$query);
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/nav.css">
          <link rel="stylesheet" type="text/css" href="../css/sidenav.css">
+         <link rel="stylesheet" type="text/css" href="../css/button.css">
         <!--[if lt IE 9]>
           <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -116,9 +117,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
      
     
     <ul class="nav navbar-nav">
-    <a href="../index.php"><li class="active"><img src="../source_files/homeicon.png" height="30" alt="home"/></li></a> 
-     <a href="controller.php"><li class="active"><img src="../source_files/offbtnn.png" height="30" alt="controls"/></li></a> 
-     <a href="controls.php"><li class="active"><img src="../source_files/eye.png" height="30" alt="controls"/></li></a> 
+    <a href="../index.php"><li class="active"><img src="../source_files/homeicon.png" height="30" alt="home" class="nonhid"/></li><li class="hid">Home</li></a> 
+     <a href="controller.php"><li><img src="../source_files/offbtnn.png" height="30" alt="controls" class="nonhid"/></li><li class="hid">Controls</li></a> 
+     <a href="controls.php"><li class="active"><img src="../source_files/eye.png" height="30" alt="controls" class="nonhid"/></li><li class="hid">Status</li></a> 
     
     
     </ul>
@@ -182,27 +183,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
                   <!-- DISPLAYS STATUS IF ANYTHING IS UNLOCKED-->
 										
              					 <hr align="left" width="80%"/>
-			         <p>Kitchen light is
-					  
-					  <?php  
+	 <p align="left">Kitchen light is
+            
+            <?php  
 $query3=mysql_query("select * from choice where id=2");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {
 echo "OFF";
-echo "<img class='security' src='../source_files/lightoff.png' width='40' height='40' align='left'>";
+echo "<img src='../source_files/lightoff.png' height='40' width='40' align='right'";
 }
-						else{
-							echo "ON";
-              echo "<img class='security' src='../source_files/lighton.png' width='40' height='40' align='left'>";
-						}
+            else{
+              echo "ON";
+              echo "<img src='../source_files/lighton.png' height='40' width='40' align='right'";
+            }
 ?>
-					  
-					  
-					  
-					  
-					  
-					  </p><div class="kopche">
+            
+            
+            
+            
+            
+            </p><div class="kopche">
 <input type="checkbox" name="kopche" class="kopche-checkbox" id="mykopche"
 <?php  
 $query3=mysql_query("select * from choice where id=2");
@@ -211,15 +212,25 @@ if($query4['choice']=="off")
 {
 echo "checked";
 }
+else{
+  $query3=mysql_query("select * from choice where id=12");
+    $query4=mysql_fetch_array($query3);
+    if($query4['choice']=="off"){
+      echo "checked";
+      
+
+    }
+
+}
 ?> />
 
-<hr>
 
-	
-	
-<label class="kopche-label" for="mykopche">
-<div class="kopche-inner"></div>
-<div class="kopche-switch"></div>
+
+  
+  
+<label class="button-label" for="mykopche">
+<div class="button-inner"></div>
+<div class="button-switch"></div>
 </label>
 </div>
 	  <style>

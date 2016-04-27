@@ -40,15 +40,15 @@ mysql_select_db("freeze",$query);
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
      </a>
-    <a class="navbar-brand" href="#">Project name</a>
+ 
    </div>
    <div id="slidemenu">
      
     
     <ul class="nav navbar-nav">
-      <a href="../index.php"><li><img src="../source_files/homeicon.png" height="30"/></li></a> 
-     <a href="controller.php"><li><img src="../source_files/offbtnn.png" height="30"/></li></a> 
-     <a href="controls.php"><li class="active"><img src="../source_files/eye.png" height="30" alt="controls"/></li></a> 
+      <a href="../index.php"><li class="active"><img src="../source_files/homeicon.png" height="30" alt="home" class="nonhid"/></li><li class="hid">Home</li></a> 
+     <a href="controller.php"><li><img src="../source_files/offbtnn.png" height="30" alt="controls" class="nonhid"/></li><li class="hid">Controls</li></a> 
+     <a href="controls.php"><li class="active"><img src="../source_files/eye.png" height="30" alt="controls" class="nonhid"/></li><li class="hid">Status</li></a> 
     
     
     </ul>
@@ -186,7 +186,7 @@ echo "checked";
 					  <hr align="left" width="80%"/>
 					 
 						   <p>Back door is <?php  
-$query3=mysql_query("select * from choice where id=7");
+$query3=mysql_query("select * from choice where id=8");
 $query4=mysql_fetch_array($query3);
 if($query4['choice']=="off")
 {

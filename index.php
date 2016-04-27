@@ -45,9 +45,9 @@ mysql_select_db("freeze",$query);
      
     
     <ul class="nav navbar-nav">
-    <a href="#"><li class="active"><img src="source_files/homeicon.png" height="30" alt="home"/></li></a> 
-     <a href="pages/controller.php"><li class="active"><img src="source_files/offbtnn.png" height="30" alt="controls"/></li></a> 
-     <a href="pages/controls.php"><li class="active"><img src="source_files/eye.png" height="30" alt="controls"/></li></a> 
+    <a href="#"><li class="active"><img src="source_files/homeicon.png" height="30" alt="home" class="nonhid"/></li><li class="hid">Home</li></a> 
+     <a href="pages/controller.php"><li><img src="source_files/offbtnn.png" height="30" alt="controls" class="nonhid"/></li><li class="hid">Controls</li></a> 
+     <a href="pages/controls.php"><li class="active"><img src="source_files/eye.png" height="30" alt="controls" class="nonhid"/></li><li class="hid">Status</li></a> 
     
     
     </ul>
@@ -88,7 +88,16 @@ if(mm<10) {
 today = mm+'/'+dd+'/'+yyyy;
 document.getElementById("time").innerHTML = today;
 		</script>
-		<p class="mainn">21°</p>
+		<p class="mainn">
+		<?php  
+$query3=mysql_query("select * from choice where id=13");
+
+$row = mysql_fetch_array($query3);
+  echo $row['choice'].'°';
+
+ 
+?>
+</p>
 		
 			</div>
 	</div>

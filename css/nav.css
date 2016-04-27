@@ -41,6 +41,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 	    margin: 0;
 	    padding: 0!important;
 	}
+	.navbar-default .nonhid{
+		display:none;
+
+	}
+	.navbar-default .hid{
+		color: #Fff;
+		margin-top: 20px;
+	}
 	#slide-nav .navbar-header {
 		
 	    margin: 0 auto;
@@ -67,11 +75,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 	    min-width: 0;
 	    width: 100%;
 	    margin: 0;
+	    	background: -moz-linear-gradient(220deg, rgba(142,184,247,1) 24%, rgba(30,57,115,1) 100%); 
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(30,57,115,1)), color-stop(76%, rgba(142,184,247,1)));  safari4+,chrome 
+background: -webkit-linear-gradient(220deg, rgba(142,184,247,1) 24%, rgba(30,57,115,1) 100%); 
+background: -o-linear-gradient(220deg, rgba(142,184,247,1) 24%, rgba(30,57,115,1) 100%); 
+background: linear-gradient(230deg, rgba(142,184,247,1) 24%, rgba(30,57,115,1) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', endColorstr='#8eb8f7',GradientType=1 ); 
 	}
 	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
 	    min-width: 0;
-	    width: 80%;
+	    width: 10%;
 	    white-space: normal;
+
 	}
 	#slide-nav {
 	    border-top: 0
@@ -86,7 +101,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 	    height: 100%;
 	    width: 80%;
 	    left: -80%;
-	    background: #eee;
+	    	background: -moz-linear-gradient(220deg, rgba(142,184,247,1) 24%, rgba(30,57,115,1) 100%); 
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(30,57,115,1)), color-stop(76%, rgba(142,184,247,1)));  safari4+,chrome 
+background: -webkit-linear-gradient(220deg, rgba(142,184,247,1) 24%, rgba(30,57,115,1) 100%); 
+background: -o-linear-gradient(220deg, rgba(142,184,247,1) 24%, rgba(30,57,115,1) 100%); 
+background: linear-gradient(230deg, rgba(142,184,247,1) 24%, rgba(30,57,115,1) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', endColorstr='#8eb8f7',GradientType=1 ); 
 	}
 	#slide-nav.navbar-inverse #navbar-height-col {
 	    background: #333;
@@ -114,6 +134,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
 	}
 	.navbar-default li{
 		float: left;
+
+
+	}
+	 .hid{
+		float: left;
+		display: none;
 
 	}
 	#page-content {

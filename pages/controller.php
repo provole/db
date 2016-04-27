@@ -112,9 +112,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
      
     
     <ul class="nav navbar-nav">
-    <a href="../index.php"><li class="active"><img src="../source_files/homeicon.png" height="30" alt="home"/></li></a> 
-     <a href="controller.php"><li class="active"><img src="../source_files/offbtnn.png" height="30" alt="controls"/></li></a> 
-     <a href="controls.php"><li class="active"><img src="../source_files/eye.png" height="30" alt="controls"/></li></a> 
+      <a href="../index.php"><li class="active"><img src="../source_files/homeicon.png" height="30" alt="home" class="nonhid"/></li><li class="hid">Home</li></a> 
+     <a href="controller.php"><li><img src="../source_files/offbtnn.png" height="30" alt="controls" class="nonhid"/></li><li class="hid">Controls</li></a> 
+     <a href="controls.php"><li class="active"><img src="../source_files/eye.png" height="30" alt="controls" class="nonhid"/></li><li class="hid">Status</li></a> 
     
     
     </ul>
@@ -149,7 +149,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3973', end
               	<li><a href="lounge.php"><img src="../source_files/lounge.png" height="25" width="30" /> Lounge</a></li>
               	 <li><a href="bathroom.php"><img src="../source_files/bathroom.png" height="25" width="30" /> Bathroom</a></li>
              	  <li><a href="garage.php"><img src="../source_files/garage.png" height="25" width="30" /> Garage</a></li>
-	               <li><a href="house.php"><img src="../source_files/house.png" height="25" width="30" /> House</a></li>
              	  <li><a href="bedroom.php"><img src="../source_files/bedroom.png" height="25" width="30" /> Bedroom</a></li> 
             </ul>
 		</div><!--/span-->
